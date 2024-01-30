@@ -1,0 +1,7 @@
+G:\DotNetProjects\TeamTasks\TeamTasks.Micro.Identity\obj\Debug\net8.0\TeamTasks.Micro.Identity.csproj.AssemblyReference.cache
+G:\DotNetProjects\TeamTasks\TeamTasks.Micro.Identity\obj\Debug\net8.0\TeamTasks.Micro.Identity.GeneratedMSBuildEditorConfig.editorconfig
+G:\DotNetProjects\TeamTasks\TeamTasks.Micro.Identity\obj\Debug\net8.0\TeamTasks.Micro.Identity.AssemblyInfoInputs.cache
+G:\DotNetProjects\TeamTasks\TeamTasks.Micro.Identity\obj\Debug\net8.0\TeamTasks.Micro.Identity.AssemblyInfo.cs
+G:\DotNetProjects\TeamTasks\TeamTasks.Micro.Identity\obj\Debug\net8.0\TeamTasks.Micro.Identity.csproj.CoreCompileInputs.cache
+G:\DotNetProjects\TeamTasks\TeamTasks.Micro.Identity\obj\Debug\net8.0\TeamTasks.Micro.Identity.MvcApplicationPartsAssemblyInfo.cs
+G:\DotNetProjects\TeamTasks\TeamTasks.Micro.Identity\obj\Debug\net8.0\TeamTasks.Micro.Identity.MvcApplicationPartsAssemblyInfo.cache

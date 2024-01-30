@@ -1,0 +1,17 @@
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.Invitation\bin\Debug\net8.0\TeamTasks.Database.Invitation.deps.json
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.Invitation\bin\Debug\net8.0\TeamTasks.Database.Invitation.dll
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.Invitation\bin\Debug\net8.0\TeamTasks.Database.Invitation.pdb
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.Invitation\bin\Debug\net8.0\TeamTasks.Database.Common.dll
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.Invitation\bin\Debug\net8.0\TeamTasks.Domain.dll
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.Invitation\bin\Debug\net8.0\TeamTasks.Database.Common.pdb
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.Invitation\bin\Debug\net8.0\TeamTasks.Domain.pdb
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.Invitation\obj\Debug\net8.0\TeamTasks.Database.Invitation.csproj.AssemblyReference.cache
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.Invitation\obj\Debug\net8.0\TeamTasks.Database.Invitation.GeneratedMSBuildEditorConfig.editorconfig
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.Invitation\obj\Debug\net8.0\TeamTasks.Database.Invitation.AssemblyInfoInputs.cache
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.Invitation\obj\Debug\net8.0\TeamTasks.Database.Invitation.AssemblyInfo.cs
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.Invitation\obj\Debug\net8.0\TeamTasks.Database.Invitation.csproj.CoreCompileInputs.cache
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.Invitation\obj\Debug\net8.0\TeamTasks.Database.Invitation.csproj.CopyComplete
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.Invitation\obj\Debug\net8.0\TeamTasks.Database.Invitation.dll
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.Invitation\obj\Debug\net8.0\refint\TeamTasks.Database.Invitation.dll
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.Invitation\obj\Debug\net8.0\TeamTasks.Database.Invitation.pdb
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.Invitation\obj\Debug\net8.0\ref\TeamTasks.Database.Invitation.dll

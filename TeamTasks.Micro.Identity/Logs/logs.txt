@@ -1,0 +1,104 @@
+2023-12-11 17:00:39.5822 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-12-11 17:00:39.6025 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-12-11 17:00:39.6025 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-12-11 17:00:39.6238 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-11 17:00:39.6238 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=G:\DotNetProjects\TeamTasks.Micro\TeamTasks.Micro.Identity\bin\Debug\net8.0\nlogIdentity.config
+2023-12-11 17:00:39.6238 Info Configuration initialized.
+2023-12-11 17:35:35.8431 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-12-11 17:35:35.8615 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-12-11 17:35:35.8615 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-12-11 17:35:35.8829 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-11 17:35:35.8829 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=G:\DotNetProjects\TeamTasks.Micro\TeamTasks.Micro.Identity\bin\Debug\net8.0\nlogIdentity.config
+2023-12-11 17:35:35.8987 Info Configuration initialized.
+2023-12-11 17:35:51.1025 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-12-11 17:35:51.1248 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-12-11 17:35:51.1248 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-12-11 17:35:51.1426 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-11 17:35:51.1426 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=G:\DotNetProjects\TeamTasks.Micro\TeamTasks.Micro.Identity\bin\Debug\net8.0\nlogIdentity.config
+2023-12-11 17:35:51.1665 Info Configuration initialized.
+2023-12-11 17:38:25.6892 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-12-11 17:38:25.7102 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-12-11 17:38:25.7102 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-12-11 17:38:25.7304 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-11 17:38:25.7431 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=G:\DotNetProjects\TeamTasks.Micro\TeamTasks.Micro.Identity\bin\Debug\net8.0\nlogIdentity.config
+2023-12-11 17:38:25.7545 Info Configuration initialized.
+2023-12-16 10:09:50.0485 Info Loading assembly name: NLog.Targets.ElasticSearch
+2023-12-16 10:09:51.3901 Info NLog.Targets.ElasticSearch, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3eb62cd298662c6a. File version: 1.0.0.0. Product version: 1.0.0+2fb9a27ff48217059d2b3648bb2a79b6b0af9922. GlobalAssemblyCache: False
+2023-12-16 10:09:52.3415 Info Registered target NLog.Targets.ElasticSearch.ElasticSearchTarget(Name=elastic)
+2023-12-16 10:09:52.3594 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-12-16 10:09:52.3610 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-12-16 10:09:52.3610 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-12-16 10:09:52.3610 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-16 10:09:52.3610 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=75, FilePath=G:\DotNetProjects\TeamTasks.Micro\TeamTasks.Micro.Identity\bin\Debug\net8.0\nlogIdentity.config
+2023-12-16 10:09:52.3610 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: elastic
+2023-12-16 10:09:52.4084 Info Configuration initialized.
+2023-12-16 10:11:45.4211 Info Loading assembly name: NLog.Targets.ElasticSearch
+2023-12-16 10:11:45.4695 Info NLog.Targets.ElasticSearch, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3eb62cd298662c6a. File version: 1.0.0.0. Product version: 1.0.0+2fb9a27ff48217059d2b3648bb2a79b6b0af9922. GlobalAssemblyCache: False
+2023-12-16 10:11:45.5148 Info Registered target NLog.Targets.ElasticSearch.ElasticSearchTarget(Name=elastic)
+2023-12-16 10:11:45.5244 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-12-16 10:11:45.5244 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-12-16 10:11:45.5244 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-12-16 10:11:45.5370 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-16 10:11:45.5370 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=75, FilePath=G:\DotNetProjects\TeamTasks.Micro\TeamTasks.Micro.Identity\bin\Debug\net8.0\nlogIdentity.config
+2023-12-16 10:11:45.5524 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: elastic
+2023-12-16 10:11:45.5834 Info Configuration initialized.
+2023-12-16 10:13:09.8432 Info Loading assembly name: NLog.Targets.ElasticSearch
+2023-12-16 10:13:09.8912 Info NLog.Targets.ElasticSearch, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3eb62cd298662c6a. File version: 1.0.0.0. Product version: 1.0.0+2fb9a27ff48217059d2b3648bb2a79b6b0af9922. GlobalAssemblyCache: False
+2023-12-16 10:13:09.9263 Info Registered target NLog.Targets.ElasticSearch.ElasticSearchTarget(Name=elastic)
+2023-12-16 10:13:09.9407 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-12-16 10:13:09.9407 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-12-16 10:13:09.9407 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-12-16 10:13:09.9407 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-16 10:13:09.9407 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=75, FilePath=G:\DotNetProjects\TeamTasks.Micro\TeamTasks.Micro.Identity\bin\Debug\net8.0\nlogIdentity.config
+2023-12-16 10:13:09.9557 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: elastic
+2023-12-16 10:13:09.9914 Info Configuration initialized.
+2023-12-16 10:15:03.3296 Info Loading assembly name: NLog.Targets.ElasticSearch
+2023-12-16 10:15:03.3837 Info NLog.Targets.ElasticSearch, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3eb62cd298662c6a. File version: 1.0.0.0. Product version: 1.0.0+2fb9a27ff48217059d2b3648bb2a79b6b0af9922. GlobalAssemblyCache: False
+2023-12-16 10:15:03.4181 Info Registered target NLog.Targets.ElasticSearch.ElasticSearchTarget(Name=elastic)
+2023-12-16 10:15:03.4442 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-12-16 10:15:03.4442 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-12-16 10:15:03.4442 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-12-16 10:15:03.4442 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-16 10:15:03.4568 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=75, FilePath=G:\DotNetProjects\TeamTasks.Micro\TeamTasks.Micro.Identity\bin\Debug\net8.0\nlogIdentity.config
+2023-12-16 10:15:03.4568 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: elastic
+2023-12-16 10:15:03.5080 Info Configuration initialized.
+2023-12-16 11:58:42.6299 Info Loading assembly name: NLog.Targets.ElasticSearch
+2023-12-16 11:58:43.0852 Info NLog.Targets.ElasticSearch, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3eb62cd298662c6a. File version: 1.0.0.0. Product version: 1.0.0+2fb9a27ff48217059d2b3648bb2a79b6b0af9922. GlobalAssemblyCache: False
+2023-12-16 11:58:43.2980 Info Registered target NLog.Targets.ElasticSearch.ElasticSearchTarget(Name=elastic)
+2023-12-16 11:58:43.3178 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-12-16 11:58:43.3178 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-12-16 11:58:43.3178 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-12-16 11:58:43.3178 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-16 11:58:43.3310 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=75, FilePath=G:\DotNetProjects\TeamTasks.Micro\TeamTasks.Micro.Identity\bin\Debug\net8.0\nlogIdentity.config
+2023-12-16 11:58:43.3310 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: elastic
+2023-12-16 11:58:43.3797 Info Configuration initialized.
+2023-12-17 11:42:44.8990 Info Loading assembly name: NLog.Targets.ElasticSearch
+2023-12-17 11:42:45.2870 Info NLog.Targets.ElasticSearch, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3eb62cd298662c6a. File version: 1.0.0.0. Product version: 1.0.0+2fb9a27ff48217059d2b3648bb2a79b6b0af9922. GlobalAssemblyCache: False
+2023-12-17 11:42:45.4485 Info Registered target NLog.Targets.ElasticSearch.ElasticSearchTarget(Name=elastic)
+2023-12-17 11:42:45.4647 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-12-17 11:42:45.4647 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-12-17 11:42:45.4647 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-12-17 11:42:45.4706 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-17 11:42:45.4706 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=75, FilePath=G:\DotNetProjects\TeamTasks.Micro\TeamTasks.Micro.Identity\bin\Debug\net8.0\nlogIdentity.config
+2023-12-17 11:42:45.4706 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: elastic
+2023-12-17 11:42:45.5224 Info Configuration initialized.
+2023-12-17 15:16:22.8831 Info Loading assembly name: NLog.Targets.ElasticSearch
+2023-12-17 15:16:22.9854 Info NLog.Targets.ElasticSearch, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3eb62cd298662c6a. File version: 1.0.0.0. Product version: 1.0.0+2fb9a27ff48217059d2b3648bb2a79b6b0af9922. GlobalAssemblyCache: False
+2023-12-17 15:16:23.0381 Info Registered target NLog.Targets.ElasticSearch.ElasticSearchTarget(Name=elastic)
+2023-12-17 15:16:23.0578 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-12-17 15:16:23.0578 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-12-17 15:16:23.0578 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-12-17 15:16:23.0697 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-17 15:16:23.0697 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=75, FilePath=G:\DotNetProjects\TeamTasks.Micro\TeamTasks.Micro.Identity\bin\Debug\net8.0\nlogIdentity.config
+2023-12-17 15:16:23.0826 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: elastic
+2023-12-17 15:16:23.1224 Info Configuration initialized.
+2023-12-18 19:15:38.3854 Info Loading assembly name: NLog.Targets.ElasticSearch
+2023-12-18 19:15:40.3411 Info NLog.Targets.ElasticSearch, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3eb62cd298662c6a. File version: 1.0.0.0. Product version: 1.0.0+2fb9a27ff48217059d2b3648bb2a79b6b0af9922. GlobalAssemblyCache: False
+2023-12-18 19:15:40.4011 Info Registered target NLog.Targets.ElasticSearch.ElasticSearchTarget(Name=elastic)
+2023-12-18 19:15:40.4195 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-12-18 19:15:40.4218 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-12-18 19:15:40.4218 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-12-18 19:15:40.4218 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-18 19:15:40.4394 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=75, FilePath=G:\DotNetProjects\TeamTasks.Micro\TeamTasks.Micro.Identity\bin\Debug\net8.0\nlogIdentity.config
+2023-12-18 19:15:40.4394 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: elastic
+2023-12-18 19:15:40.4851 Info Configuration initialized.

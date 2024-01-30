@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MediatR" Version="12.2.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
+      <PackageReference Include="RabbitMQ.Client" Version="7.0.0-alpha.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\TeamTasks.Application\TeamTasks.Application.csproj" />
+      <ProjectReference Include="..\TeamTasks.Database.Attendee\TeamTasks.Database.Attendee.csproj" />
+      <ProjectReference Include="..\TeamTasks.Database.GroupEvent\TeamTasks.Database.GroupEvent.csproj" />
+      <ProjectReference Include="..\TeamTasks.Database.PersonalEvent\TeamTasks.Database.PersonalEvent.csproj" />
+      <ProjectReference Include="..\TeamTasks.Events.GroupEvent\TeamTasks.Events.GroupEvent.csproj" />
+    </ItemGroup>
+
+</Project>

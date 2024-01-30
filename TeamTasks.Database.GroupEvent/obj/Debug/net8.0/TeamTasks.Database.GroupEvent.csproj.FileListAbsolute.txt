@@ -1,0 +1,17 @@
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.GroupEvent\bin\Debug\net8.0\TeamTasks.Database.GroupEvent.deps.json
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.GroupEvent\bin\Debug\net8.0\TeamTasks.Database.GroupEvent.dll
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.GroupEvent\bin\Debug\net8.0\TeamTasks.Database.GroupEvent.pdb
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.GroupEvent\bin\Debug\net8.0\TeamTasks.Database.Common.dll
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.GroupEvent\bin\Debug\net8.0\TeamTasks.Domain.dll
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.GroupEvent\bin\Debug\net8.0\TeamTasks.Database.Common.pdb
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.GroupEvent\bin\Debug\net8.0\TeamTasks.Domain.pdb
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.GroupEvent\obj\Debug\net8.0\TeamTasks.Database.GroupEvent.csproj.AssemblyReference.cache
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.GroupEvent\obj\Debug\net8.0\TeamTasks.Database.GroupEvent.GeneratedMSBuildEditorConfig.editorconfig
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.GroupEvent\obj\Debug\net8.0\TeamTasks.Database.GroupEvent.AssemblyInfoInputs.cache
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.GroupEvent\obj\Debug\net8.0\TeamTasks.Database.GroupEvent.AssemblyInfo.cs
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.GroupEvent\obj\Debug\net8.0\TeamTasks.Database.GroupEvent.csproj.CoreCompileInputs.cache
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.GroupEvent\obj\Debug\net8.0\TeamTasks.Database.GroupEvent.csproj.CopyComplete
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.GroupEvent\obj\Debug\net8.0\TeamTasks.Database.GroupEvent.dll
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.GroupEvent\obj\Debug\net8.0\refint\TeamTasks.Database.GroupEvent.dll
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.GroupEvent\obj\Debug\net8.0\TeamTasks.Database.GroupEvent.pdb
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.GroupEvent\obj\Debug\net8.0\ref\TeamTasks.Database.GroupEvent.dll

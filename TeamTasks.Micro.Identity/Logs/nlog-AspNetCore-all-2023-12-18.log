@@ -1,0 +1,405 @@
+2023-12-18 19:15:41.8817|0|ERROR|Quartz.Core.JobRunShell|Job DEFAULT.354bb94d-6664-4bee-aad6-6f20b0b6fdcf threw an unhandled Exception:  System.InvalidOperationException: The corresponding CLR type for entity type 'DomainEvent' cannot be instantiated, and there is no derived entity type in the model that corresponds to a concrete CLR type.
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.ValidateClrInheritance(IModel model, IEntityType entityType, HashSet`1 validEntityTypes)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.ValidateClrInheritance(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.RelationalModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.NpgsqlModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelRuntimeInitializer.Initialize(IModel model, Boolean designTime, IDiagnosticsLogger`1 validationLogger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, ModelCreationDependencies modelCreationDependencies, Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel(Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.<>c.<TryAddCoreServices>b__8_4(IServiceProvider p)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at TeamTasks.Micro.QuartZ.Jobs.DbTask.Execute(IJobExecutionContext context) in G:\DotNetProjects\TeamTasks.Micro\TeamTasks.Micro.QuartZ\Jobs\DbTask.cs:line 13
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+2023-12-18 19:15:41.9062|0|INFO|IdentityServer4.Startup|Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e 
+2023-12-18 19:15:41.9290|0|ERROR|Quartz.Core.ErrorLogger|Job DEFAULT.354bb94d-6664-4bee-aad6-6f20b0b6fdcf threw an exception. Quartz.SchedulerException: Job threw an unhandled exception.
+ ---> System.InvalidOperationException: The corresponding CLR type for entity type 'DomainEvent' cannot be instantiated, and there is no derived entity type in the model that corresponds to a concrete CLR type.
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.ValidateClrInheritance(IModel model, IEntityType entityType, HashSet`1 validEntityTypes)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.ValidateClrInheritance(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.RelationalModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.NpgsqlModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelRuntimeInitializer.Initialize(IModel model, Boolean designTime, IDiagnosticsLogger`1 validationLogger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, ModelCreationDependencies modelCreationDependencies, Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel(Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.<>c.<TryAddCoreServices>b__8_4(IServiceProvider p)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at TeamTasks.Micro.QuartZ.Jobs.DbTask.Execute(IJobExecutionContext context) in G:\DotNetProjects\TeamTasks.Micro\TeamTasks.Micro.QuartZ\Jobs\DbTask.cs:line 13
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+   --- End of inner exception stack trace --- [See nested exception: System.InvalidOperationException: The corresponding CLR type for entity type 'DomainEvent' cannot be instantiated, and there is no derived entity type in the model that corresponds to a concrete CLR type.
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.ValidateClrInheritance(IModel model, IEntityType entityType, HashSet`1 validEntityTypes)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.ValidateClrInheritance(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.RelationalModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.NpgsqlModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelRuntimeInitializer.Initialize(IModel model, Boolean designTime, IDiagnosticsLogger`1 validationLogger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, ModelCreationDependencies modelCreationDependencies, Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel(Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.<>c.<TryAddCoreServices>b__8_4(IServiceProvider p)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at TeamTasks.Micro.QuartZ.Jobs.DbTask.Execute(IJobExecutionContext context) in G:\DotNetProjects\TeamTasks.Micro\TeamTasks.Micro.QuartZ\Jobs\DbTask.cs:line 13
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)]
+2023-12-18 19:15:41.9389|0|DEBUG|Quartz.Core.JobRunShell|Trigger instruction : NoInstruction 
+2023-12-18 19:15:41.9389|0|INFO|IdentityServer4.Startup|You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation. 
+2023-12-18 19:15:41.9389|0|INFO|IdentityServer4.Startup|Using the default authentication scheme Bearer for IdentityServer 
+2023-12-18 19:15:41.9389|0|INFO|IdentityServer4.Startup|Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used. 
+2023-12-18 19:15:41.9389|0|DEBUG|IdentityServer4.Startup|Using Bearer as default ASP.NET Core scheme for authentication 
+2023-12-18 19:15:41.9389|0|DEBUG|IdentityServer4.Startup|Using Identity.External as default ASP.NET Core scheme for sign-in 
+2023-12-18 19:15:41.9389|0|DEBUG|IdentityServer4.Startup|Using Identity.External as default ASP.NET Core scheme for sign-out 
+2023-12-18 19:15:41.9389|0|DEBUG|IdentityServer4.Startup|Using Bearer as default ASP.NET Core scheme for challenge 
+2023-12-18 19:15:41.9389|0|DEBUG|IdentityServer4.Startup|Using Bearer as default ASP.NET Core scheme for forbid 
+2023-12-18 19:15:42.6040|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2023-12-18 19:15:45.2292|0|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2023-12-18 19:15:46.8155|0|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ponom\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-12-18 19:15:46.8155|0|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\ponom\AppData\Local\ASP.NET\DataProtection-Keys\key-08f7d3fd-fe4c-45fa-9173-4b07bedd42f7.xml'. 
+2023-12-18 19:15:46.8293|0|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {08f7d3fd-fe4c-45fa-9173-4b07bedd42f7}. 
+2023-12-18 19:15:46.8293|0|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {08f7d3fd-fe4c-45fa-9173-4b07bedd42f7} with expiration date 2024-03-06 15:33:55Z as default key. 
+2023-12-18 19:15:46.8293|0|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2023-12-18 19:15:46.8293|0|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI. 
+2023-12-18 19:15:46.8293|0|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2023-12-18 19:15:46.8293|0|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. 
+2023-12-18 19:15:46.8293|0|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. 
+2023-12-18 19:15:46.8293|0|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {08f7d3fd-fe4c-45fa-9173-4b07bedd42f7} as the default key. 
+2023-12-18 19:15:46.8293|0|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {08f7d3fd-fe4c-45fa-9173-4b07bedd42f7} was loaded during application startup. 
+2023-12-18 19:15:46.9702|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7004 
+2023-12-18 19:15:46.9702|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5284 
+2023-12-18 19:15:46.9702|0|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly TeamTasks.Micro.Identity 
+2023-12-18 19:15:46.9702|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-12-18 19:15:46.9702|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-12-18 19:15:46.9702|0|INFO|Microsoft.Hosting.Lifetime|Content root path: G:\DotNetProjects\TeamTasks.Micro\TeamTasks.Micro.Identity 
+2023-12-18 19:15:46.9702|0|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2023-12-18 19:16:00.7934|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMVVPDTDTQBS" accepted. 
+2023-12-18 19:16:00.7934|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMVVPDTDTQBS" started. 
+2023-12-18 19:16:00.8100|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMVVPDTDTQBS established using the following protocol: Tls13 
+2023-12-18 19:16:00.8188|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending SETTINGS frame for stream ID 0 with length 24 and flags NONE. 
+2023-12-18 19:16:00.8188|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2023-12-18 19:16:00.8188|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" received SETTINGS frame for stream ID 0 with length 24 and flags NONE. 
+2023-12-18 19:16:00.8188|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2023-12-18 19:16:00.8188|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2023-12-18 19:16:00.8188|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" received HEADERS frame for stream ID 1 with length 524 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2023-12-18 19:16:00.8290|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" received SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2023-12-18 19:16:00.8290|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7004/ - - - 
+2023-12-18 19:16:00.8290|0|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2023-12-18 19:16:00.8290|0|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-12-18 19:16:00.8616|0|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2023-12-18 19:16:00.8616|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending HEADERS frame for stream ID 1 with length 61 and flags END_STREAM, END_HEADERS. 
+2023-12-18 19:16:00.8616|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7004/ - 301 0 - 23.1557ms 
+2023-12-18 19:16:00.8616|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" received HEADERS frame for stream ID 3 with length 24 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2023-12-18 19:16:00.8616|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7004/index.html - - - 
+2023-12-18 19:16:00.8616|0|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-12-18 19:16:00.8616|0|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2023-12-18 19:16:00.9197|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending HEADERS frame for stream ID 3 with length 28 and flags END_HEADERS. 
+2023-12-18 19:16:00.9197|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 3 with length 4790 and flags NONE. 
+2023-12-18 19:16:00.9231|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 3 with length 0 and flags END_STREAM. 
+2023-12-18 19:16:00.9231|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7004/index.html - 200 - text/html;charset=utf-8 54.4265ms 
+2023-12-18 19:16:00.9395|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" received HEADERS frame for stream ID 5 with length 97 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2023-12-18 19:16:00.9395|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7004/swagger-ui.css - - - 
+2023-12-18 19:16:00.9395|0|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-12-18 19:16:00.9395|0|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2023-12-18 19:16:00.9395|0|TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2023-12-18 19:16:00.9395|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending HEADERS frame for stream ID 5 with length 79 and flags END_HEADERS. 
+2023-12-18 19:16:00.9395|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 5 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9395|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 5 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9395|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 5 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9395|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 5 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9395|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 5 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9395|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 5 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9395|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 5 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9395|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 5 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9395|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 5 with length 13857 and flags NONE. 
+2023-12-18 19:16:00.9395|0|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+2023-12-18 19:16:00.9395|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7004/swagger-ui.css - 200 144929 text/css 7.7036ms 
+2023-12-18 19:16:00.9395|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 5 with length 0 and flags END_STREAM. 
+2023-12-18 19:16:00.9395|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" received HEADERS frame for stream ID 7 with length 49 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2023-12-18 19:16:00.9395|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" received HEADERS frame for stream ID 9 with length 46 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2023-12-18 19:16:00.9395|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7004/swagger-ui-bundle.js - - - 
+2023-12-18 19:16:00.9395|0|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-12-18 19:16:00.9395|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7004/swagger-ui-standalone-preset.js - - - 
+2023-12-18 19:16:00.9395|0|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-12-18 19:16:00.9395|0|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2023-12-18 19:16:00.9395|0|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2023-12-18 19:16:00.9395|0|TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2023-12-18 19:16:00.9395|0|TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2023-12-18 19:16:00.9395|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending HEADERS frame for stream ID 9 with length 50 and flags END_HEADERS. 
+2023-12-18 19:16:00.9395|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9395|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9395|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending HEADERS frame for stream ID 7 with length 35 and flags END_HEADERS. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 9 with length 867 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 9 with length 0 and flags END_STREAM. 
+2023-12-18 19:16:00.9537|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7004/swagger-ui-standalone-preset.js - 200 312163 text/javascript 12.9873ms 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9537|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9689|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9689|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9689|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9689|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9689|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9689|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9689|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9689|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9689|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9689|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9689|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9689|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2023-12-18 19:16:00.9689|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 12960 and flags NONE. 
+2023-12-18 19:16:00.9689|0|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+2023-12-18 19:16:00.9689|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 7 with length 0 and flags END_STREAM. 
+2023-12-18 19:16:00.9689|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7004/swagger-ui-bundle.js - 200 1061536 text/javascript 20.7186ms 
+2023-12-18 19:16:01.1080|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" received HEADERS frame for stream ID 11 with length 68 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2023-12-18 19:16:01.1080|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - - - 
+2023-12-18 19:16:01.1080|0|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-12-18 19:16:01.1299|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" received HEADERS frame for stream ID 13 with length 84 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2023-12-18 19:16:01.1299|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7004/favicon-32x32.png - - - 
+2023-12-18 19:16:01.1299|0|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-12-18 19:16:01.1299|0|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2023-12-18 19:16:01.1299|0|TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2023-12-18 19:16:01.1299|0|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A' 
+2023-12-18 19:16:01.1299|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending HEADERS frame for stream ID 13 with length 71 and flags END_HEADERS. 
+2023-12-18 19:16:01.1299|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7004/favicon-32x32.png - 200 628 image/png 0.3217ms 
+2023-12-18 19:16:01.1299|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 13 with length 628 and flags NONE. 
+2023-12-18 19:16:01.1299|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 13 with length 0 and flags END_STREAM. 
+2023-12-18 19:16:01.1915|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending HEADERS frame for stream ID 11 with length 35 and flags END_HEADERS. 
+2023-12-18 19:16:01.1915|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 11 with length 9774 and flags NONE. 
+2023-12-18 19:16:01.1915|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending DATA frame for stream ID 11 with length 0 and flags END_STREAM. 
+2023-12-18 19:16:01.1915|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 84.1319ms 
+2023-12-18 19:16:04.2016|0|DEBUG|Quartz.Core.QuartzSchedulerThread|Batch acquisition of 0 triggers 
+2023-12-18 19:16:33.8726|0|DEBUG|Quartz.Core.QuartzSchedulerThread|Batch acquisition of 0 triggers 
+2023-12-18 19:17:01.4647|0|DEBUG|Quartz.Core.QuartzSchedulerThread|Batch acquisition of 0 triggers 
+2023-12-18 19:17:26.3332|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" received HEADERS frame for stream ID 15 with length 97 and flags END_HEADERS, PRIORITY. 
+2023-12-18 19:17:26.3332|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" received PING frame for stream ID 0 with length 8 and flags NONE. 
+2023-12-18 19:17:26.3332|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7004/api/v1/identity/register-user - application/json 241 
+2023-12-18 19:17:26.3332|0|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-12-18 19:17:26.3332|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" sending PING frame for stream ID 0 with length 8 and flags ACK. 
+2023-12-18 19:17:26.3332|0|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMVVPDTDTQBS" received DATA frame for stream ID 15 with length 241 and flags END_STREAM. 
+2023-12-18 19:17:26.3332|0|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|POST requests are not supported 
+2023-12-18 19:17:26.3332|0|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|POST requests are not supported 
+2023-12-18 19:17:26.3332|0|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'https://localhost:7004'. 
+2023-12-18 19:17:26.3332|0|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution failed. 
+2023-12-18 19:17:26.3332|0|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Request origin https://localhost:7004 does not have permission to access the resource. 
+2023-12-18 19:17:26.3600|0|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/v1/identity/register-user' 
+2023-12-18 19:17:26.3600|0|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'TeamTasks.Micro.Identity.Controllers.IdentityController.Register (TeamTasks.Micro.Identity)' with route pattern 'api/v1/identity/register-user' is valid for the request path '/api/v1/identity/register-user' 
+2023-12-18 19:17:26.3600|0|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'TeamTasks.Micro.Identity.Controllers.IdentityController.Register (TeamTasks.Micro.Identity)' 
+2023-12-18 19:17:26.3600|0|TRACE|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|The endpoint does not specify the IRequestSizeLimitMetadata. 
+2023-12-18 19:17:26.5559|0|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated. 
+2023-12-18 19:17:26.5559|0|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware|No CORS policy found for the specified request. 
+2023-12-18 19:17:26.5559|0|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated. 
+2023-12-18 19:17:26.5630|0|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated. 
+2023-12-18 19:17:26.5630|0|TRACE|IdentityServer4.Hosting.EndpointRouter|No endpoint entry found for request path: /api/v1/identity/register-user 
+2023-12-18 19:17:26.5630|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'TeamTasks.Micro.Identity.Controllers.IdentityController.Register (TeamTasks.Micro.Identity)' 
+2023-12-18 19:17:26.5780|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Register", controller = "Identity"}. Executing controller action with signature System.Threading.Tasks.Task`1[TeamTasks.Micro.Core.Entity.Account.User] Register(TeamTasks.Micro.Identity.Commands.Register.RegisterCommand) on controller TeamTasks.Micro.Identity.Controllers.IdentityController (TeamTasks.Micro.Identity). 
+2023-12-18 19:17:26.5780|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2023-12-18 19:17:26.5780|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2023-12-18 19:17:26.5780|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2023-12-18 19:17:26.5780|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2023-12-18 19:17:26.5780|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000), Microsoft.AspNetCore.Mvc.ProducesAttribute (Order: 0) 
+2023-12-18 19:17:26.5780|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller TeamTasks.Micro.Identity.Controllers.IdentityController (TeamTasks.Micro.Identity) 
+2023-12-18 19:17:26.5780|0|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An additional 'IServiceProvider' was created for internal use by Entity Framework. An existing service provider was not used due to the following configuration changes: configuration changed for 'Core:EnableSensitiveDataLogging', configuration changed for 'Core:EnableDetailedErrors'. 
+2023-12-18 19:17:26.5780|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller TeamTasks.Micro.Identity.Controllers.IdentityController (TeamTasks.Micro.Identity) 
+2023-12-18 19:17:26.6014|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'request' of type 'TeamTasks.Micro.Identity.Commands.Register.RegisterCommand' ... 
+2023-12-18 19:17:26.6014|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'request' of type 'TeamTasks.Micro.Identity.Commands.Register.RegisterCommand' using the name '' in request data ... 
+2023-12-18 19:17:26.6014|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2023-12-18 19:17:26.6098|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMVVPDTDTQBS", Request id "0HMVVPDTDTQBS:0000000F": started reading request body. 
+2023-12-18 19:17:26.6098|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMVVPDTDTQBS", Request id "0HMVVPDTDTQBS:0000000F": done reading request body. 
+2023-12-18 19:17:26.6098|0|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'TeamTasks.Micro.Identity.Commands.Register.RegisterCommand' 
+2023-12-18 19:17:26.6098|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'request' of type 'TeamTasks.Micro.Identity.Commands.Register.RegisterCommand'. 
+2023-12-18 19:17:26.6098|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'request' of type 'TeamTasks.Micro.Identity.Commands.Register.RegisterCommand'. 
+2023-12-18 19:17:26.6098|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'request' of type 'TeamTasks.Micro.Identity.Commands.Register.RegisterCommand' ... 
+2023-12-18 19:17:26.6098|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'request' of type 'TeamTasks.Micro.Identity.Commands.Register.RegisterCommand'. 
+2023-12-18 19:17:26.6098|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-12-18 19:17:26.6098|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-12-18 19:17:26.6098|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-12-18 19:17:26.6098|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-12-18 19:17:26.6098|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method TeamTasks.Micro.Identity.Controllers.IdentityController.Register (TeamTasks.Micro.Identity) - Validation state: Valid 
+2023-12-18 19:17:26.6098|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method TeamTasks.Micro.Identity.Controllers.IdentityController.Register (TeamTasks.Micro.Identity) with arguments (TeamTasks.Micro.Identity.Commands.Register.RegisterCommand) 
+2023-12-18 19:17:29.3047|0|DEBUG|Quartz.Core.QuartzSchedulerThread|Batch acquisition of 1 triggers 
+2023-12-18 19:17:30.5144|0|INFO|TeamTasks.Micro.Identity.Commands.Register.RegisterCommandHandler|Request for login an account - strdfgdfing strапрарing 
+2023-12-18 19:17:31.0675|0|DEBUG|Microsoft.EntityFrameworkCore.Model|The index {'UserId'} was not created on entity type 'IdentityUserRole<long>' as the properties are already covered by the index {'UserId', 'RoleId'}. 
+2023-12-18 19:17:31.0675|0|DEBUG|Microsoft.EntityFrameworkCore.Model|The index {'UserId'} was not created on entity type 'IdentityUserToken<long>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}. 

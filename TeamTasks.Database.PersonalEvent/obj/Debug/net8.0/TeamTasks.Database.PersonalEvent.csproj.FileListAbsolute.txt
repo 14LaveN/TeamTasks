@@ -1,0 +1,17 @@
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.PersonalEvent\bin\Debug\net8.0\TeamTasks.Database.PersonalEvent.deps.json
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.PersonalEvent\bin\Debug\net8.0\TeamTasks.Database.PersonalEvent.dll
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.PersonalEvent\bin\Debug\net8.0\TeamTasks.Database.PersonalEvent.pdb
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.PersonalEvent\bin\Debug\net8.0\TeamTasks.Database.Common.dll
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.PersonalEvent\bin\Debug\net8.0\TeamTasks.Domain.dll
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.PersonalEvent\bin\Debug\net8.0\TeamTasks.Database.Common.pdb
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.PersonalEvent\bin\Debug\net8.0\TeamTasks.Domain.pdb
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.PersonalEvent\obj\Debug\net8.0\TeamTasks.Database.PersonalEvent.csproj.AssemblyReference.cache
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.PersonalEvent\obj\Debug\net8.0\TeamTasks.Database.PersonalEvent.GeneratedMSBuildEditorConfig.editorconfig
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.PersonalEvent\obj\Debug\net8.0\TeamTasks.Database.PersonalEvent.AssemblyInfoInputs.cache
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.PersonalEvent\obj\Debug\net8.0\TeamTasks.Database.PersonalEvent.AssemblyInfo.cs
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.PersonalEvent\obj\Debug\net8.0\TeamTasks.Database.PersonalEvent.csproj.CoreCompileInputs.cache
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.PersonalEvent\obj\Debug\net8.0\TeamTasks.Database.PersonalEvent.csproj.CopyComplete
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.PersonalEvent\obj\Debug\net8.0\TeamTasks.Database.PersonalEvent.dll
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.PersonalEvent\obj\Debug\net8.0\refint\TeamTasks.Database.PersonalEvent.dll
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.PersonalEvent\obj\Debug\net8.0\TeamTasks.Database.PersonalEvent.pdb
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.PersonalEvent\obj\Debug\net8.0\ref\TeamTasks.Database.PersonalEvent.dll
