@@ -15,3 +15,4 @@ G:\DotNetProjects\TeamTasks\TeamTasks.QuartZ\obj\Debug\net8.0\TeamTasks.QuartZ.d
 G:\DotNetProjects\TeamTasks\TeamTasks.QuartZ\obj\Debug\net8.0\refint\TeamTasks.QuartZ.dll
 G:\DotNetProjects\TeamTasks\TeamTasks.QuartZ\obj\Debug\net8.0\TeamTasks.QuartZ.pdb
 G:\DotNetProjects\TeamTasks\TeamTasks.QuartZ\obj\Debug\net8.0\ref\TeamTasks.QuartZ.dll
+G:\DotNetProjects\TeamTasks\TeamTasks.QuartZ\obj\Debug\net8.0\TeamTasks.QuartZ.sourcelink.json

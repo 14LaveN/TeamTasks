@@ -23,7 +23,7 @@ public static class DependencyInjection
         services.Configure<MongoSettings>(configuration.GetSection(MongoSettings.MongoSettingsKey));
 
         services.AddHealthChecks()
-            .AddMongoDb(configuration.GetConnectionString("MongoDb")!);
+            .AddMongoDb(configuration.GetConnectionString("MongoConnection")!);
 
         return services;
     }

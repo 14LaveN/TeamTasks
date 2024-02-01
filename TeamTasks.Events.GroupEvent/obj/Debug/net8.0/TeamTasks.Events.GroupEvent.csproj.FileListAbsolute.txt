@@ -4,21 +4,17 @@ G:\DotNetProjects\TeamTasks\TeamTasks.Events.GroupEvent\bin\Debug\net8.0\TeamTas
 G:\DotNetProjects\TeamTasks\TeamTasks.Events.GroupEvent\bin\Debug\net8.0\TeamTasks.Application.dll
 G:\DotNetProjects\TeamTasks\TeamTasks.Events.GroupEvent\bin\Debug\net8.0\TeamTasks.Cache.dll
 G:\DotNetProjects\TeamTasks\TeamTasks.Events.GroupEvent\bin\Debug\net8.0\TeamTasks.Contracts.dll
-G:\DotNetProjects\TeamTasks\TeamTasks.Events.GroupEvent\bin\Debug\net8.0\TeamTasks.Database.Attendee.dll
 G:\DotNetProjects\TeamTasks\TeamTasks.Events.GroupEvent\bin\Debug\net8.0\TeamTasks.Database.Common.dll
 G:\DotNetProjects\TeamTasks\TeamTasks.Events.GroupEvent\bin\Debug\net8.0\TeamTasks.Database.GroupEvent.dll
 G:\DotNetProjects\TeamTasks\TeamTasks.Events.GroupEvent\bin\Debug\net8.0\TeamTasks.Database.Identity.dll
-G:\DotNetProjects\TeamTasks\TeamTasks.Events.GroupEvent\bin\Debug\net8.0\TeamTasks.Database.Invitation.dll
 G:\DotNetProjects\TeamTasks\TeamTasks.Events.GroupEvent\bin\Debug\net8.0\TeamTasks.Database.Notification.dll
 G:\DotNetProjects\TeamTasks\TeamTasks.Events.GroupEvent\bin\Debug\net8.0\TeamTasks.Domain.dll
 G:\DotNetProjects\TeamTasks\TeamTasks.Events.GroupEvent\bin\Debug\net8.0\TeamTasks.Email.dll
 G:\DotNetProjects\TeamTasks\TeamTasks.Events.GroupEvent\bin\Debug\net8.0\TeamTasks.RabbitMq.dll
 G:\DotNetProjects\TeamTasks\TeamTasks.Events.GroupEvent\bin\Debug\net8.0\TeamTasks.Application.pdb
 G:\DotNetProjects\TeamTasks\TeamTasks.Events.GroupEvent\bin\Debug\net8.0\TeamTasks.Contracts.pdb
-G:\DotNetProjects\TeamTasks\TeamTasks.Events.GroupEvent\bin\Debug\net8.0\TeamTasks.Database.Attendee.pdb
 G:\DotNetProjects\TeamTasks\TeamTasks.Events.GroupEvent\bin\Debug\net8.0\TeamTasks.Database.GroupEvent.pdb
 G:\DotNetProjects\TeamTasks\TeamTasks.Events.GroupEvent\bin\Debug\net8.0\TeamTasks.Database.Identity.pdb
-G:\DotNetProjects\TeamTasks\TeamTasks.Events.GroupEvent\bin\Debug\net8.0\TeamTasks.Database.Invitation.pdb
 G:\DotNetProjects\TeamTasks\TeamTasks.Events.GroupEvent\bin\Debug\net8.0\TeamTasks.Database.Notification.pdb
 G:\DotNetProjects\TeamTasks\TeamTasks.Events.GroupEvent\bin\Debug\net8.0\TeamTasks.RabbitMq.pdb
 G:\DotNetProjects\TeamTasks\TeamTasks.Events.GroupEvent\bin\Debug\net8.0\TeamTasks.Cache.pdb
@@ -35,3 +31,4 @@ G:\DotNetProjects\TeamTasks\TeamTasks.Events.GroupEvent\obj\Debug\net8.0\TeamTas
 G:\DotNetProjects\TeamTasks\TeamTasks.Events.GroupEvent\obj\Debug\net8.0\refint\TeamTasks.Events.GroupEvent.dll
 G:\DotNetProjects\TeamTasks\TeamTasks.Events.GroupEvent\obj\Debug\net8.0\TeamTasks.Events.GroupEvent.pdb
 G:\DotNetProjects\TeamTasks\TeamTasks.Events.GroupEvent\obj\Debug\net8.0\ref\TeamTasks.Events.GroupEvent.dll
+G:\DotNetProjects\TeamTasks\TeamTasks.Events.GroupEvent\obj\Debug\net8.0\TeamTasks.Events.GroupEvent.sourcelink.json

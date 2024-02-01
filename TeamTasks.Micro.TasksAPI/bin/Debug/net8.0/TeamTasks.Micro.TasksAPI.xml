@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TeamTasks.Micro.TasksAPI</name>
+    </assembly>
+    <members>
+        <member name="T:TeamTasks.Micro.TasksAPI.Behaviors.TaskTransactionBehavior`2">
+            <summary>
+            Represents the <see cref="!:AnswerEntity"/> transaction behaviour class.
+            </summary>
+        </member>
+        <member name="M:TeamTasks.Micro.TasksAPI.Behaviors.TaskTransactionBehavior`2.#ctor(TeamTasks.Database.Common.Abstractions.IUnitOfWork{TeamTasks.Domain.Entities.TaskEntity})">
+            <summary>
+            Initializes a new instance of the <see cref="T:TeamTasks.Micro.TasksAPI.Behaviors.TaskTransactionBehavior`2"/> class.
+            </summary>
+            <param name="unitOfWork">The unit of work.</param>
+        </member>
+        <member name="M:TeamTasks.Micro.TasksAPI.Behaviors.TaskTransactionBehavior`2.Handle(`0,MediatR.RequestHandlerDelegate{`1},System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="T:TeamTasks.Micro.TasksAPI.Configurations.SwaggerConfiguration">
+            <summary>
+            Represents the swagger configuration static class.
+            </summary>
+        </member>
+        <member name="T:TeamTasks.Micro.TasksAPI.Contracts.RequestLoggingMiddleware">
+            <summary>
+            The request logging middleware.
+            </summary>
+            <param name="logger">The logger.</param>
+            <param name="next">The request delegate.</param>
+        </member>
+        <member name="M:TeamTasks.Micro.TasksAPI.Contracts.RequestLoggingMiddleware.#ctor(Microsoft.Extensions.Logging.ILogger{TeamTasks.Micro.TasksAPI.Contracts.RequestLoggingMiddleware},Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            The request logging middleware.
+            </summary>
+            <param name="logger">The logger.</param>
+            <param name="next">The request delegate.</param>
+        </member>
+    </members>
+</doc>

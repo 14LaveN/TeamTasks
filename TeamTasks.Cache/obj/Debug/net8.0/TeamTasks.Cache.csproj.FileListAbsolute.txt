@@ -10,3 +10,4 @@ G:\DotNetProjects\TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\TeamTasks.Cache.dll
 G:\DotNetProjects\TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\refint\TeamTasks.Cache.dll
 G:\DotNetProjects\TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\TeamTasks.Cache.pdb
 G:\DotNetProjects\TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\ref\TeamTasks.Cache.dll
+G:\DotNetProjects\TeamTasks\TeamTasks.Cache\obj\Debug\net8.0\TeamTasks.Cache.sourcelink.json

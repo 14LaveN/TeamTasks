@@ -7,9 +7,8 @@ public static class MiddlewareConfiguration
         if (app is null)
             throw new ArgumentException();
         
-        app.UseMiddleware<RequestLoggingMiddleware>(app.Logger);
+        app.UseMiddleware<RequestLoggingMiddleware>(app.Logger); 
         //TODO app.UseMiddleware<ResponseCachingMiddleware>();
-       //TODO app.UseMiddleware<ExceptionMiddleware>(app.Logger);// - Exceptions Middleware
 
         return app;
     }

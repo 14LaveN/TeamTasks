@@ -16,7 +16,6 @@
 
     <ItemGroup>
       <ProjectReference Include="..\TeamTasks.Application\TeamTasks.Application.csproj" />
-      <ProjectReference Include="..\TeamTasks.Database.Attendee\TeamTasks.Database.Attendee.csproj" />
       <ProjectReference Include="..\TeamTasks.Database.GroupEvent\TeamTasks.Database.GroupEvent.csproj" />
       <ProjectReference Include="..\TeamTasks.Database.PersonalEvent\TeamTasks.Database.PersonalEvent.csproj" />
       <ProjectReference Include="..\TeamTasks.Events.GroupEvent\TeamTasks.Events.GroupEvent.csproj" />

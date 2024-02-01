@@ -27,7 +27,13 @@ public sealed class User : IdentityUser<Guid>, IAuditableEntity, ISoftDeletableE
     /// <param name="lastName">The user last name.</param>
     /// <param name="emailAddress">The user emailAddress instance.</param>
     /// <param name="passwordHash">The user password hash.</param>
-    private User(FirstName firstName, LastName lastName, EmailAddress emailAddress, string passwordHash)
+    /// <param name="companyId">The company identifier.</param>
+    private User(
+        FirstName firstName,
+        LastName lastName,
+        EmailAddress emailAddress,
+        string passwordHash,
+        Guid companyId)
     {
         Ensure.NotEmpty(firstName, "The first name is required.", nameof(firstName));
         Ensure.NotEmpty(lastName, "The last name is required.", nameof(lastName));
@@ -38,16 +44,7 @@ public sealed class User : IdentityUser<Guid>, IAuditableEntity, ISoftDeletableE
         LastName = lastName;
         EmailAddress = emailAddress;
         PasswordHash = passwordHash;
-    }
-
-    /// <summary>
-    /// Initializes a new instance of the <see cref="User"/> class.
-    /// </summary>
-    /// <remarks>
-    /// Required by EF Core.
-    /// </remarks>
-    private User()
-    {
+        CompanyId = companyId;
     }
 
     public Guid Id { get; set; }
@@ -76,6 +73,11 @@ public sealed class User : IdentityUser<Guid>, IAuditableEntity, ISoftDeletableE
     /// Gets or sets <see cref="Company"/> class.
     /// </summary>
     public Company? Company { get; set; }
+    
+    /// <summary>
+    /// Gets or sets company identifier.
+    /// </summary>
+    public Guid CompanyId { get; }
 
     /// <summary>
     /// Gets the user full name.
@@ -120,8 +122,8 @@ public sealed class User : IdentityUser<Guid>, IAuditableEntity, ISoftDeletableE
     /// Adds the specified <see cref="IDomainEvent"/> to the <see cref="AggregateRoot"/>.
     /// </summary>
     /// <param name="domainEvent">The domain event.</param>
-    protected void AddDomainEvent(IDomainEvent domainEvent) => _domainEvents.Add(domainEvent);
-    
+    private void AddDomainEvent(IDomainEvent domainEvent) => _domainEvents.Add(domainEvent);
+
     /// <summary>
     /// Creates a new user with the specified first name, last name, emailAddress and password hash.
     /// </summary>
@@ -129,10 +131,16 @@ public sealed class User : IdentityUser<Guid>, IAuditableEntity, ISoftDeletableE
     /// <param name="lastName">The last name.</param>
     /// <param name="emailAddress">The emailAddress.</param>
     /// <param name="passwordHash">The password hash.</param>
+    /// <param name="companyId">The company identifier.</param>
     /// <returns>The newly created user instance.</returns>
-    public static User Create(FirstName firstName, LastName lastName, EmailAddress emailAddress, string passwordHash)
+    public static User Create(
+        FirstName firstName,
+        LastName lastName,
+        EmailAddress emailAddress,
+        string passwordHash,
+        Guid companyId)
     {
-        var user = new User(firstName, lastName, emailAddress, passwordHash);
+        var user = new User(firstName, lastName, emailAddress, passwordHash, companyId);
 
         user.AddDomainEvent(new UserCreatedDomainEvent(user));
 
@@ -146,7 +154,10 @@ public sealed class User : IdentityUser<Guid>, IAuditableEntity, ISoftDeletableE
     /// <param name="category">The event category.</param>
     /// <param name="dateTimeUtc">The date and time of the event.</param>
     /// <returns>The newly created personal event.</returns>
-    public PersonalEvent CreatePersonalEvent(Name name, Category category, DateTime dateTimeUtc)
+    public PersonalEvent CreatePersonalEvent(
+        Name name,
+        Category category,
+        DateTime dateTimeUtc)
     {
         var personalEvent = new PersonalEvent(this, name, category, dateTimeUtc);
 

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "A5VsFBFZn+Hml4f6ORdctaTopx3cdhECejXqDq+VuuSWc8uze6bbjCPaR5PTYK31W/XOVPeoFWa8ByAbR+wCIQ==",
+  "dgSpecHash": "uPr2l3Ebi47HT4uYpDqELNk6STfkon5sZiLlmwO34FvJ5uO1+0/jmDOBBBS8LhIgzru8xybLkogc6QpjcaF14A==",
   "success": true,
   "projectFilePath": "G:\\DotNetProjects\\TeamTasks\\TeamTasks.RabbitMq\\TeamTasks.RabbitMq.csproj",
   "expectedPackageFiles": [

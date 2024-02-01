@@ -1,8 +1,8 @@
 namespace TeamTasks.Application.Core.Settings;
 
-public class MongoSettings
+public sealed class MongoSettings
 {
-    public static string MongoSettingsKey = "MongoSettings";
+    public static string MongoSettingsKey = "MongoConnection";
     
     public string ConnectionString { get; set; } = null!;
 

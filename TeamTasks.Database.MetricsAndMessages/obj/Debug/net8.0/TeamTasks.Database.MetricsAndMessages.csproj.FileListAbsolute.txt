@@ -21,3 +21,4 @@ G:\DotNetProjects\TeamTasks\TeamTasks.Database.MetricsAndMessages\obj\Debug\net8
 G:\DotNetProjects\TeamTasks\TeamTasks.Database.MetricsAndMessages\obj\Debug\net8.0\refint\TeamTasks.Database.MetricsAndMessages.dll
 G:\DotNetProjects\TeamTasks\TeamTasks.Database.MetricsAndMessages\obj\Debug\net8.0\TeamTasks.Database.MetricsAndMessages.pdb
 G:\DotNetProjects\TeamTasks\TeamTasks.Database.MetricsAndMessages\obj\Debug\net8.0\ref\TeamTasks.Database.MetricsAndMessages.dll
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.MetricsAndMessages\obj\Debug\net8.0\TeamTasks.Database.MetricsAndMessages.sourcelink.json

@@ -15,3 +15,4 @@ G:\DotNetProjects\TeamTasks\TeamTasks.Database.GroupEvent\obj\Debug\net8.0\TeamT
 G:\DotNetProjects\TeamTasks\TeamTasks.Database.GroupEvent\obj\Debug\net8.0\refint\TeamTasks.Database.GroupEvent.dll
 G:\DotNetProjects\TeamTasks\TeamTasks.Database.GroupEvent\obj\Debug\net8.0\TeamTasks.Database.GroupEvent.pdb
 G:\DotNetProjects\TeamTasks\TeamTasks.Database.GroupEvent\obj\Debug\net8.0\ref\TeamTasks.Database.GroupEvent.dll
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.GroupEvent\obj\Debug\net8.0\TeamTasks.Database.GroupEvent.sourcelink.json

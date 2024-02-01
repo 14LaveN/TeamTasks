@@ -2672,23 +2672,6 @@
           "bin/placeholder/TeamTasks.Contracts.dll": {}
         }
       },
-      "TeamTasks.Database.Attendee/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.1",
-          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
-          "TeamTasks.Database.Common": "1.0.0",
-          "TeamTasks.Database.Identity": "1.0.0",
-          "TeamTasks.Domain": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/TeamTasks.Database.Attendee.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/TeamTasks.Database.Attendee.dll": {}
-        }
-      },
       "TeamTasks.Database.Common/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -2743,21 +2726,6 @@
         },
         "runtime": {
           "bin/placeholder/TeamTasks.Database.Identity.dll": {}
-        }
-      },
-      "TeamTasks.Database.Invitation/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
-          "TeamTasks.Database.Common": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/TeamTasks.Database.Invitation.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/TeamTasks.Database.Invitation.dll": {}
         }
       },
       "TeamTasks.Database.Notification/1.0.0": {
@@ -7472,11 +7440,6 @@
       "path": "../TeamTasks.Contracts/TeamTasks.Contracts.csproj",
       "msbuildProject": "../TeamTasks.Contracts/TeamTasks.Contracts.csproj"
     },
-    "TeamTasks.Database.Attendee/1.0.0": {
-      "type": "project",
-      "path": "../TeamTasks.Database.Attendee/TeamTasks.Database.Attendee.csproj",
-      "msbuildProject": "../TeamTasks.Database.Attendee/TeamTasks.Database.Attendee.csproj"
-    },
     "TeamTasks.Database.Common/1.0.0": {
       "type": "project",
       "path": "../TeamTasks.Database.Common/TeamTasks.Database.Common.csproj",
@@ -7491,11 +7454,6 @@
       "type": "project",
       "path": "../TeamTasks.Database.Identity/TeamTasks.Database.Identity.csproj",
       "msbuildProject": "../TeamTasks.Database.Identity/TeamTasks.Database.Identity.csproj"
-    },
-    "TeamTasks.Database.Invitation/1.0.0": {
-      "type": "project",
-      "path": "../TeamTasks.Database.Invitation/TeamTasks.Database.Invitation.csproj",
-      "msbuildProject": "../TeamTasks.Database.Invitation/TeamTasks.Database.Invitation.csproj"
     },
     "TeamTasks.Database.Notification/1.0.0": {
       "type": "project",
@@ -7522,10 +7480,8 @@
     "net8.0": [
       "TeamTasks.Application >= 1.0.0",
       "TeamTasks.Contracts >= 1.0.0",
-      "TeamTasks.Database.Attendee >= 1.0.0",
       "TeamTasks.Database.GroupEvent >= 1.0.0",
       "TeamTasks.Database.Identity >= 1.0.0",
-      "TeamTasks.Database.Invitation >= 1.0.0",
       "TeamTasks.Database.Notification >= 1.0.0",
       "TeamTasks.RabbitMq >= 1.0.0"
     ]
@@ -7568,17 +7524,11 @@
             "G:\\DotNetProjects\\TeamTasks\\TeamTasks.Contracts\\TeamTasks.Contracts.csproj": {
               "projectPath": "G:\\DotNetProjects\\TeamTasks\\TeamTasks.Contracts\\TeamTasks.Contracts.csproj"
             },
-            "G:\\DotNetProjects\\TeamTasks\\TeamTasks.Database.Attendee\\TeamTasks.Database.Attendee.csproj": {
-              "projectPath": "G:\\DotNetProjects\\TeamTasks\\TeamTasks.Database.Attendee\\TeamTasks.Database.Attendee.csproj"
-            },
             "G:\\DotNetProjects\\TeamTasks\\TeamTasks.Database.GroupEvent\\TeamTasks.Database.GroupEvent.csproj": {
               "projectPath": "G:\\DotNetProjects\\TeamTasks\\TeamTasks.Database.GroupEvent\\TeamTasks.Database.GroupEvent.csproj"
             },
             "G:\\DotNetProjects\\TeamTasks\\TeamTasks.Database.Identity\\TeamTasks.Database.Identity.csproj": {
               "projectPath": "G:\\DotNetProjects\\TeamTasks\\TeamTasks.Database.Identity\\TeamTasks.Database.Identity.csproj"
-            },
-            "G:\\DotNetProjects\\TeamTasks\\TeamTasks.Database.Invitation\\TeamTasks.Database.Invitation.csproj": {
-              "projectPath": "G:\\DotNetProjects\\TeamTasks\\TeamTasks.Database.Invitation\\TeamTasks.Database.Invitation.csproj"
             },
             "G:\\DotNetProjects\\TeamTasks\\TeamTasks.Database.Notification\\TeamTasks.Database.Notification.csproj": {
               "projectPath": "G:\\DotNetProjects\\TeamTasks\\TeamTasks.Database.Notification\\TeamTasks.Database.Notification.csproj"

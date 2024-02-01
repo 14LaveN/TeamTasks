@@ -13,13 +13,13 @@ namespace TeamTasks.Database.Tasks.Data.Repositories;
 /// <summary>
 /// Represents the tasks repository.
 /// </summary>
-internal sealed class TasksRepository : GenericRepository<Domain.Entities.TaskEntity>, ITasksRepository
+internal sealed class TasksRepository : GenericRepository<TaskEntity>, ITasksRepository
 {
     /// <summary>
     /// Initializes a new instance of the <see cref="TasksRepository"/> class.
     /// </summary>
     /// <param name="dbContext">The database context.</param>
-    public TasksRepository(BaseDbContext<Domain.Entities.TaskEntity> dbContext)
+    public TasksRepository(BaseDbContext<TaskEntity> dbContext)
         : base(dbContext)
     {
     }
@@ -28,7 +28,7 @@ internal sealed class TasksRepository : GenericRepository<Domain.Entities.TaskEn
     public async Task<Result<TaskEntity>> UpdateTask(TaskEntity task)
     {
         const string sql = @"
-                UPDATE answers
+                UPDATE tasks
                 SET ModifiedOnUtc= @ModifiedOnUtc,
                     IsDone = @IsDone,
                     Priority = @Priority,
@@ -39,7 +39,7 @@ internal sealed class TasksRepository : GenericRepository<Domain.Entities.TaskEn
         SqlParameter[] parameters =
         {
             new("@ModifiedOnUtc", DateTime.UtcNow),
-            new("@Title", task.Title),
+            new("@Title", task.Title.Value),
             new("@Id", task.Id),
             new("@IsDone", task.IsDone),
             new("@Priority", task.Priority),

@@ -13,3 +13,4 @@ G:\DotNetProjects\TeamTasks\TeamTasks.Database.Common\obj\Debug\net8.0\TeamTasks
 G:\DotNetProjects\TeamTasks\TeamTasks.Database.Common\obj\Debug\net8.0\refint\TeamTasks.Database.Common.dll
 G:\DotNetProjects\TeamTasks\TeamTasks.Database.Common\obj\Debug\net8.0\TeamTasks.Database.Common.pdb
 G:\DotNetProjects\TeamTasks\TeamTasks.Database.Common\obj\Debug\net8.0\ref\TeamTasks.Database.Common.dll
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.Common\obj\Debug\net8.0\TeamTasks.Database.Common.sourcelink.json

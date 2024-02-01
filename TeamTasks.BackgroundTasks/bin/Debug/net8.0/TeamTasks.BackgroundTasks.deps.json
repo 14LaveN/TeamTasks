@@ -14,7 +14,6 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
           "RabbitMQ.Client": "7.0.0-alpha.2",
           "TeamTasks.Application": "1.0.0",
-          "TeamTasks.Database.Attendee": "1.0.0",
           "TeamTasks.Database.GroupEvent": "1.0.0",
           "TeamTasks.Database.PersonalEvent": "1.0.0",
           "TeamTasks.Events.GroupEvent": "1.0.0"
@@ -1465,18 +1464,6 @@
           "TeamTasks.Contracts.dll": {}
         }
       },
-      "TeamTasks.Database.Attendee/1.0.0": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.1",
-          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
-          "TeamTasks.Database.Common": "1.0.0",
-          "TeamTasks.Database.Identity": "1.0.0",
-          "TeamTasks.Domain": "1.0.0"
-        },
-        "runtime": {
-          "TeamTasks.Database.Attendee.dll": {}
-        }
-      },
       "TeamTasks.Database.Common/1.0.0": {
         "dependencies": {
           "AspNetCore.HealthChecks.NpgSql": "8.0.0",
@@ -1516,16 +1503,6 @@
         },
         "runtime": {
           "TeamTasks.Database.Identity.dll": {}
-        }
-      },
-      "TeamTasks.Database.Invitation/1.0.0": {
-        "dependencies": {
-          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
-          "TeamTasks.Database.Common": "1.0.0"
-        },
-        "runtime": {
-          "TeamTasks.Database.Invitation.dll": {}
         }
       },
       "TeamTasks.Database.Notification/1.0.0": {
@@ -1575,10 +1552,8 @@
         "dependencies": {
           "TeamTasks.Application": "1.0.0",
           "TeamTasks.Contracts": "1.0.0",
-          "TeamTasks.Database.Attendee": "1.0.0",
           "TeamTasks.Database.GroupEvent": "1.0.0",
           "TeamTasks.Database.Identity": "1.0.0",
-          "TeamTasks.Database.Invitation": "1.0.0",
           "TeamTasks.Database.Notification": "1.0.0",
           "TeamTasks.RabbitMq": "1.0.0"
         },
@@ -2726,11 +2701,6 @@
       "serviceable": false,
       "sha512": ""
     },
-    "TeamTasks.Database.Attendee/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "TeamTasks.Database.Common/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -2742,11 +2712,6 @@
       "sha512": ""
     },
     "TeamTasks.Database.Identity/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "TeamTasks.Database.Invitation/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

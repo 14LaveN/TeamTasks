@@ -10,3 +10,4 @@ G:\DotNetProjects\TeamTasks\TeamTasks.Email\obj\Debug\net8.0\TeamTasks.Email.dll
 G:\DotNetProjects\TeamTasks\TeamTasks.Email\obj\Debug\net8.0\refint\TeamTasks.Email.dll
 G:\DotNetProjects\TeamTasks\TeamTasks.Email\obj\Debug\net8.0\TeamTasks.Email.pdb
 G:\DotNetProjects\TeamTasks\TeamTasks.Email\obj\Debug\net8.0\ref\TeamTasks.Email.dll
+G:\DotNetProjects\TeamTasks\TeamTasks.Email\obj\Debug\net8.0\TeamTasks.Email.sourcelink.json

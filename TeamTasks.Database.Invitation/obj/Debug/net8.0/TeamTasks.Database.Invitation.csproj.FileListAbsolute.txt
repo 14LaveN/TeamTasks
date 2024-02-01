@@ -15,3 +15,4 @@ G:\DotNetProjects\TeamTasks\TeamTasks.Database.Invitation\obj\Debug\net8.0\TeamT
 G:\DotNetProjects\TeamTasks\TeamTasks.Database.Invitation\obj\Debug\net8.0\refint\TeamTasks.Database.Invitation.dll
 G:\DotNetProjects\TeamTasks\TeamTasks.Database.Invitation\obj\Debug\net8.0\TeamTasks.Database.Invitation.pdb
 G:\DotNetProjects\TeamTasks\TeamTasks.Database.Invitation\obj\Debug\net8.0\ref\TeamTasks.Database.Invitation.dll
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.Invitation\obj\Debug\net8.0\TeamTasks.Database.Invitation.sourcelink.json

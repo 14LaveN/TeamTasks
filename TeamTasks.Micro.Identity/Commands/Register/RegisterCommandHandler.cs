@@ -1,18 +1,16 @@
 using System.Security.Authentication;
-using TeamTasks.Micro.Identity.Commands.Login;
-using TeamTasks.Micro.Identity.Models.Identity;
 using FluentValidation;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Quartz.Util;
-using TeamTasks.Database.Common.Abstractions;
-using TeamTasks.Database.Identity.Data.Interfaces;
 using TeamTasks.Domain.Core.Exceptions;
 using TeamTasks.Domain.Core.Primitives.Result;
 using TeamTasks.Domain.Entities;
 using TeamTasks.Domain.Enumerations;
 using TeamTasks.Domain.ValueObjects;
 using TeamTasks.Email.Emails;
+using TeamTasks.Micro.Identity.Commands.Login;
+using TeamTasks.Micro.Identity.Models.Identity;
 
 namespace TeamTasks.Micro.Identity.Commands.Register;
 
@@ -43,7 +41,7 @@ internal class RegisterCommandHandler(ILogger<RegisterCommandHandler> logger,
             
             Result<FirstName> firstNameResult = FirstName.Create(request.FirstName);
             Result<LastName> lastNameResult = LastName.Create(request.LastName);
-            Result<Domain.ValueObjects.EmailAddress> emailResult = Domain.ValueObjects.EmailAddress.Create(request.Email);
+            Result<EmailAddress> emailResult = EmailAddress.Create(request.Email);
             Result<Password> passwordResult = Password.Create(request.Password);
             
             var user = await userManager.FindByNameAsync(request.UserName);
@@ -54,7 +52,7 @@ internal class RegisterCommandHandler(ILogger<RegisterCommandHandler> logger,
                 throw new NotFoundException(nameof(user), "User with the same name");
             }
 
-            user = User.Create(firstNameResult.Value, lastNameResult.Value, emailResult.Value, passwordResult.Value);
+            user = User.Create(firstNameResult.Value, lastNameResult.Value, emailResult.Value, passwordResult.Value, Guid.Empty);
             
             var result = await userManager.CreateAsync(user, request.Password);
             
@@ -67,16 +65,16 @@ internal class RegisterCommandHandler(ILogger<RegisterCommandHandler> logger,
             if (result.Succeeded)
             {
                 await _signInManager.SignInAsync(user, false);
-                loginResponse = await mediator.Send(new LoginCommand()
+                loginResponse = await mediator.Send(new LoginCommand
                 {
                     UserName = request.UserName,
                     Password = request.Password
                 }, cancellationToken);
 
-                 if (!user.EmailAddress.Value.IsNullOrWhiteSpace() && user.UserName is not null)
-                     await emailService.SendEmailAsync(new( user.EmailAddress,
-                         user.UserName,
-                         "You authorized to TeamTasks"));
+                 //TODO if (!user.EmailAddress.Value.IsNullOrWhiteSpace() && user.UserName is not null)
+                 //TODO     await emailService.SendEmailAsync(new( user.EmailAddress,
+                 //TODO         user.UserName,
+                 //TODO         "You authorized to TeamTasks"));
 
                 logger.LogInformation($"User authorized - {user.UserName} {DateTime.UtcNow}");
             }

@@ -9,10 +9,8 @@
     <ItemGroup>
       <ProjectReference Include="..\TeamTasks.Application\TeamTasks.Application.csproj" />
       <ProjectReference Include="..\TeamTasks.Contracts\TeamTasks.Contracts.csproj" />
-      <ProjectReference Include="..\TeamTasks.Database.Attendee\TeamTasks.Database.Attendee.csproj" />
       <ProjectReference Include="..\TeamTasks.Database.GroupEvent\TeamTasks.Database.GroupEvent.csproj" />
       <ProjectReference Include="..\TeamTasks.Database.Identity\TeamTasks.Database.Identity.csproj" />
-      <ProjectReference Include="..\TeamTasks.Database.Invitation\TeamTasks.Database.Invitation.csproj" />
       <ProjectReference Include="..\TeamTasks.Database.Notification\TeamTasks.Database.Notification.csproj" />
       <ProjectReference Include="..\TeamTasks.RabbitMq\TeamTasks.RabbitMq.csproj" />
     </ItemGroup>

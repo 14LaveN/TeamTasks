@@ -50,45 +50,6 @@ public sealed class GroupEvent : Event
         return groupEvent;
     }
 
-    /// <summary>
-    /// Invites the specified user to the event.
-    /// </summary>
-    /// <param name="user">The user to be invited.</param>
-    /// <param name="invitationRepository">The invitation repository.</param>
-    /// <returns>The result that contains an invitation or an error.</returns>
-    public async Task<Result<Invitation>> InviteAsync(User user, object invitationRepository)
-    {
-        if (true)//await invitationRepository.CheckIfInvitationAlreadySentAsync(this, user))
-        {
-            return Result.Failure<Invitation>(DomainErrors.GroupEvent.InvitationAlreadySent);
-        }
-
-        var invitation = new Invitation(this, user);
-
-        AddDomainEvent(new InvitationSentDomainEvent(invitation));
-
-        return invitation;
-    }
-
-    /// <summary>
-    /// Gets the event owner.
-    /// </summary>
-    /// <returns>The event owner attendee instance.</returns>
-    public Attendee GetOwner() => new Attendee(this);
-
-    /// <inheritdoc />
-    public override Result Cancel(DateTime utcNow)
-    {
-        Result result = base.Cancel(utcNow);
-
-        if (result.IsSuccess)
-        {
-            AddDomainEvent(new GroupEventCancelledDomainEvent(this));
-        }
-
-        return result;
-    }
-
     /// <inheritdoc />
     public override bool ChangeName(Name name)
     {

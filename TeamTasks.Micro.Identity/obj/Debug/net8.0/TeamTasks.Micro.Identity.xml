@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TeamTasks.Micro.Identity</name>
+    </assembly>
+    <members>
+        <member name="T:TeamTasks.Micro.Identity.Commands.ChangePassword.ChangePasswordCommand">
+            <summary>
+            Represents the change password command.
+            </summary>
+        </member>
+        <member name="M:TeamTasks.Micro.Identity.Commands.ChangePassword.ChangePasswordCommand.#ctor(System.Guid,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TeamTasks.Micro.Identity.Commands.ChangePassword.ChangePasswordCommand"/> class.
+            </summary>
+            <param name="userId">The user identifier.</param>
+            <param name="password">The new password.</param>
+        </member>
+        <member name="P:TeamTasks.Micro.Identity.Commands.ChangePassword.ChangePasswordCommand.UserId">
+            <summary>
+            Gets the user identifier.
+            </summary>
+        </member>
+        <member name="P:TeamTasks.Micro.Identity.Commands.ChangePassword.ChangePasswordCommand.Password">
+            <summary>
+            Gets the new password.
+            </summary>
+        </member>
+        <member name="T:TeamTasks.Micro.Identity.Commands.ChangePassword.ChangePasswordCommandHandler">
+            <summary>
+            Represents the <see cref="T:TeamTasks.Micro.Identity.Commands.ChangePassword.ChangePasswordCommand"/> handler.
+            </summary>
+        </member>
+        <member name="M:TeamTasks.Micro.Identity.Commands.ChangePassword.ChangePasswordCommandHandler.#ctor(TeamTasks.Database.Identity.Data.Interfaces.IUserUnitOfWork,Microsoft.AspNetCore.Identity.UserManager{TeamTasks.Domain.Entities.User})">
+            <summary>
+            Initializes a new instance of the <see cref="T:TeamTasks.Micro.Identity.Commands.ChangePassword.ChangePasswordCommandHandler"/> class.
+            </summary>
+            <param name="unitOfWork">The unit of work.</param>
+            <param name="userManager"></param>
+        </member>
+        <member name="M:TeamTasks.Micro.Identity.Commands.ChangePassword.ChangePasswordCommandHandler.Handle(TeamTasks.Micro.Identity.Commands.ChangePassword.ChangePasswordCommand,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:TeamTasks.Micro.Identity.Commands.ChangePassword.ChangePasswordCommandValidator">
+            <summary>
+            Represents the <see cref="T:TeamTasks.Micro.Identity.Commands.ChangePassword.ChangePasswordCommand"/> validator.
+            </summary>
+        </member>
+        <member name="M:TeamTasks.Micro.Identity.Commands.ChangePassword.ChangePasswordCommandValidator.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TeamTasks.Micro.Identity.Commands.ChangePassword.ChangePasswordCommandValidator"/> class.
+            </summary>
+        </member>
+        <member name="M:TeamTasks.Micro.Identity.Commands.Register.RegisterCommand.#ctor(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="!:CreateUserCommand"/> class.
+            </summary>
+            <param name="firstName">The first name.</param>
+            <param name="lastName">The last name.</param>
+            <param name="email">The emailAddress.</param>
+            <param name="password">The password.</param>
+            <param name="userName">The user name.</param>
+        </member>
+        <member name="P:TeamTasks.Micro.Identity.Commands.Register.RegisterCommand.UserName">
+            <summary>
+            Gets the user name.
+            </summary>
+        </member>
+        <member name="P:TeamTasks.Micro.Identity.Commands.Register.RegisterCommand.FirstName">
+            <summary>
+            Gets the first name.
+            </summary>
+        </member>
+        <member name="P:TeamTasks.Micro.Identity.Commands.Register.RegisterCommand.LastName">
+            <summary>
+            Gets the last name.
+            </summary>
+        </member>
+        <member name="P:TeamTasks.Micro.Identity.Commands.Register.RegisterCommand.Email">
+            <summary>
+            Gets the emailAddress.
+            </summary>
+        </member>
+        <member name="P:TeamTasks.Micro.Identity.Commands.Register.RegisterCommand.Password">
+            <summary>
+            Gets the password.
+            </summary>
+        </member>
+        <member name="M:TeamTasks.Micro.Identity.Controllers.IdentityController.Login(TeamTasks.Micro.Identity.Commands.Login.LoginCommand)">
+            <summary>
+            Login account.
+            </summary>
+            <param name="request"></param>
+            <returns>Base information about register an account</returns>
+            <remarks>
+            Example request:
+            </remarks>
+            <response code="200">Return description and access token</response>
+            <response code="400"></response>
+            <response code="500">Internal server error</response>
+        </member>
+        <member name="M:TeamTasks.Micro.Identity.Controllers.IdentityController.Register(TeamTasks.Micro.Identity.Commands.Register.RegisterCommand)">
+            <summary>
+            Register account
+            </summary>
+            <param name="request"></param>
+            <returns>Base information about login an account</returns>
+            <remarks>
+            Example request:
+            </remarks>
+            <response code="200">Return description and access token</response>
+            <response code="400"></response>
+            <response code="500">Internal server error</response>
+        </member>
+    </members>
+</doc>
