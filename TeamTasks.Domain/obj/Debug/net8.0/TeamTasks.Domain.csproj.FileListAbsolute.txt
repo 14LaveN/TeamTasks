@@ -10,3 +10,4 @@ G:\DotNetProjects\TeamTasks\TeamTasks.Domain\obj\Debug\net8.0\TeamTasks.Domain.d
 G:\DotNetProjects\TeamTasks\TeamTasks.Domain\obj\Debug\net8.0\refint\TeamTasks.Domain.dll
 G:\DotNetProjects\TeamTasks\TeamTasks.Domain\obj\Debug\net8.0\TeamTasks.Domain.pdb
 G:\DotNetProjects\TeamTasks\TeamTasks.Domain\obj\Debug\net8.0\ref\TeamTasks.Domain.dll
+G:\DotNetProjects\TeamTasks\TeamTasks.Domain\obj\Debug\net8.0\TeamTasks.Domain.sourcelink.json

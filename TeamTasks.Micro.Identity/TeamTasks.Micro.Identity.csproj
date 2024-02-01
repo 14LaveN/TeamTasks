@@ -18,12 +18,12 @@
     <ItemGroup>
       <ProjectReference Include="..\TeamTasks.Application\TeamTasks.Application.csproj" />
       <ProjectReference Include="..\TeamTasks.Contracts\TeamTasks.Contracts.csproj" />
-      <ProjectReference Include="..\TeamTasks.Database.Attendee\TeamTasks.Database.Attendee.csproj" />
       <ProjectReference Include="..\TeamTasks.Database.Common\TeamTasks.Database.Common.csproj" />
+      <ProjectReference Include="..\TeamTasks.Database.Company\TeamTasks.Database.Company.csproj" />
       <ProjectReference Include="..\TeamTasks.Database.GroupEvent\TeamTasks.Database.GroupEvent.csproj" />
-      <ProjectReference Include="..\TeamTasks.Database.Invitation\TeamTasks.Database.Invitation.csproj" />
       <ProjectReference Include="..\TeamTasks.Database.Notification\TeamTasks.Database.Notification.csproj" />
       <ProjectReference Include="..\TeamTasks.Database.PersonalEvent\TeamTasks.Database.PersonalEvent.csproj" />
+      <ProjectReference Include="..\TeamTasks.Database.Tasks\TeamTasks.Database.Tasks.csproj" />
       <ProjectReference Include="..\TeamTasks.QuartZ\TeamTasks.QuartZ.csproj" />
       <ProjectReference Include="..\TeamTasks.RabbitMq\TeamTasks.RabbitMq.csproj" />
     </ItemGroup>
@@ -33,6 +33,14 @@
       <PackageReference Include="IdentityServer4" Version="4.1.2" />
       <PackageReference Include="IdentityServer4.AspNetIdentity" Version="4.1.2" />
       <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.1" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.1">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.1">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
       <PackageReference Include="NLog.Web.AspNetCore" Version="5.3.8" />
       <PackageReference Include="prometheus-net.AspNetCore" Version="8.2.1" />
       <PackageReference Include="Prometheus.Client.AspNetCore" Version="5.0.0" />

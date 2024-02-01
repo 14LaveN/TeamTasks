@@ -29,6 +29,8 @@ public sealed class Company
         Description = description;
     }
 
+    public Company() { }
+
     /// <summary>
     /// Gets or sets name.
     /// </summary>

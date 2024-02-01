@@ -17,3 +17,4 @@ G:\DotNetProjects\TeamTasks\TeamTasks.Database.Notification\obj\Debug\net8.0\Tea
 G:\DotNetProjects\TeamTasks\TeamTasks.Database.Notification\obj\Debug\net8.0\refint\TeamTasks.Database.Notification.dll
 G:\DotNetProjects\TeamTasks\TeamTasks.Database.Notification\obj\Debug\net8.0\TeamTasks.Database.Notification.pdb
 G:\DotNetProjects\TeamTasks\TeamTasks.Database.Notification\obj\Debug\net8.0\ref\TeamTasks.Database.Notification.dll
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.Notification\obj\Debug\net8.0\TeamTasks.Database.Notification.sourcelink.json

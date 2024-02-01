@@ -1029,3 +1029,4 @@ G:\DotNetProjects\TeamTasks\TeamTasks.Web\obj\Debug\net8.0\TeamTasks.Web.dll
 G:\DotNetProjects\TeamTasks\TeamTasks.Web\obj\Debug\net8.0\refint\TeamTasks.Web.dll
 G:\DotNetProjects\TeamTasks\TeamTasks.Web\obj\Debug\net8.0\TeamTasks.Web.pdb
 G:\DotNetProjects\TeamTasks\TeamTasks.Web\obj\Debug\net8.0\ref\TeamTasks.Web.dll
+G:\DotNetProjects\TeamTasks\TeamTasks.Web\obj\Debug\net8.0\TeamTasks.Web.sourcelink.json

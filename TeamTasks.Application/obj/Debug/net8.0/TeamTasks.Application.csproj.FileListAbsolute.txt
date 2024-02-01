@@ -19,3 +19,4 @@ G:\DotNetProjects\TeamTasks\TeamTasks.Application\obj\Debug\net8.0\TeamTasks.App
 G:\DotNetProjects\TeamTasks\TeamTasks.Application\obj\Debug\net8.0\refint\TeamTasks.Application.dll
 G:\DotNetProjects\TeamTasks\TeamTasks.Application\obj\Debug\net8.0\TeamTasks.Application.pdb
 G:\DotNetProjects\TeamTasks\TeamTasks.Application\obj\Debug\net8.0\ref\TeamTasks.Application.dll
+G:\DotNetProjects\TeamTasks\TeamTasks.Application\obj\Debug\net8.0\TeamTasks.Application.sourcelink.json

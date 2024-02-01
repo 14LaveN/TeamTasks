@@ -9,5 +9,6 @@ namespace TeamTasks.Database.Tasks.Data;
 public sealed class DoneTasksSpecification : Specification<Domain.Entities.TaskEntity>
 {
     /// <inheritdoc />
-    public override Expression<Func<Domain.Entities.TaskEntity, bool>> ToExpression() => taskEntity => taskEntity.IsDone;
+    public override Expression<Func<Domain.Entities.TaskEntity, bool>> ToExpression() => 
+        taskEntity => taskEntity.IsDone;
 }

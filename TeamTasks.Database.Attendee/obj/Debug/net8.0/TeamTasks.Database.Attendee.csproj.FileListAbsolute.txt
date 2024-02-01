@@ -17,3 +17,4 @@ G:\DotNetProjects\TeamTasks\TeamTasks.Database.Attendee\obj\Debug\net8.0\TeamTas
 G:\DotNetProjects\TeamTasks\TeamTasks.Database.Attendee\obj\Debug\net8.0\refint\TeamTasks.Database.Attendee.dll
 G:\DotNetProjects\TeamTasks\TeamTasks.Database.Attendee\obj\Debug\net8.0\TeamTasks.Database.Attendee.pdb
 G:\DotNetProjects\TeamTasks\TeamTasks.Database.Attendee\obj\Debug\net8.0\ref\TeamTasks.Database.Attendee.dll
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.Attendee\obj\Debug\net8.0\TeamTasks.Database.Attendee.sourcelink.json

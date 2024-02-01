@@ -29,3 +29,4 @@ G:\DotNetProjects\TeamTasks\TeamTasks.Events.PersonalEvent\obj\Debug\net8.0\Team
 G:\DotNetProjects\TeamTasks\TeamTasks.Events.PersonalEvent\obj\Debug\net8.0\refint\TeamTasks.Events.PersonalEvent.dll
 G:\DotNetProjects\TeamTasks\TeamTasks.Events.PersonalEvent\obj\Debug\net8.0\TeamTasks.Events.PersonalEvent.pdb
 G:\DotNetProjects\TeamTasks\TeamTasks.Events.PersonalEvent\obj\Debug\net8.0\ref\TeamTasks.Events.PersonalEvent.dll
+G:\DotNetProjects\TeamTasks\TeamTasks.Events.PersonalEvent\obj\Debug\net8.0\TeamTasks.Events.PersonalEvent.sourcelink.json

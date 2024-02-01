@@ -13,3 +13,6 @@ G:\DotNetProjects\TeamTasks\TeamTasks.Database.Identity\obj\Debug\net8.0\TeamTas
 G:\DotNetProjects\TeamTasks\TeamTasks.Database.Identity\obj\Debug\net8.0\refint\TeamTasks.Database.Identity.dll
 G:\DotNetProjects\TeamTasks\TeamTasks.Database.Identity\obj\Debug\net8.0\TeamTasks.Database.Identity.pdb
 G:\DotNetProjects\TeamTasks\TeamTasks.Database.Identity\obj\Debug\net8.0\ref\TeamTasks.Database.Identity.dll
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.Identity\obj\Debug\net8.0\TeamTasks.Database.Identity.sourcelink.json
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.Identity\bin\Debug\net8.0\TeamTasks.Database.Identity.runtimeconfig.json
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.Identity\obj\Debug\net8.0\TeamTasks.Database.Identity.genruntimeconfig.cache

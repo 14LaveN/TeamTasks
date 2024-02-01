@@ -32,7 +32,6 @@ public static class DependencyInjection
 
         services.AddHostedService<IntegrationEventConsumerBackgroundService>();
 
-        services.AddScoped<IGroupEventNotificationsProducer, GroupEventNotificationsProducer>();
 
         services.AddScoped<IPersonalEventNotificationsProducer, PersonalEventNotificationsProducer>();
 

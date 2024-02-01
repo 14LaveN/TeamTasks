@@ -13,5 +13,22 @@ internal sealed class TaskConfiguration : IEntityTypeConfiguration<TaskEntity>
     public void Configure(EntityTypeBuilder<TaskEntity> builder)
     {
         builder.ToTable("tasks");
+        
+        builder.HasIndex(x => x.Id)
+            .HasDatabaseName("IdTaskIndex")
+            .IsUnique();
+
+        builder.Property(x => x.Id)
+            .ValueGeneratedNever();
+        
+        builder.HasOne(x => x.Company)
+            .WithMany(x => x.Tasks)
+            .HasForeignKey(x=>x.CompanyId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+        builder.HasOne(x => x.Author)
+            .WithMany(x => x.Tasks)
+            .HasForeignKey(x=>x.AuthorId)
+            .OnDelete(DeleteBehavior.Restrict);
     }
 }

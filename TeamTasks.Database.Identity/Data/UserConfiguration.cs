@@ -22,9 +22,15 @@ internal sealed class UserConfiguration : IEntityTypeConfiguration<User>
         builder.HasData(User.Create(FirstName.Create("dfsdf").Value,
             LastName.Create("fdfsdfsf").Value,
             new EmailAddress("dfsdfsdfdsf"),
-            "Sdfdsf_2008"));
+            "Sdfdsf_2008",
+            Guid.Empty));
         
         builder.HasKey(user => user.Id);
+
+        builder.HasOne(x => x.Company)
+            .WithMany(x => x.Users)
+            .HasForeignKey(x => x.CompanyId)
+            .OnDelete(DeleteBehavior.Restrict);
 
         builder.OwnsOne(user => user.FirstName, firstNameBuilder =>
         {
@@ -60,6 +66,11 @@ internal sealed class UserConfiguration : IEntityTypeConfiguration<User>
             .HasField("_passwordHash")
             .HasColumnName("PasswordHash")
             .IsRequired();
+
+        builder.Property(x => x.CompanyId)
+            .HasField("CompanyId")
+            .HasColumnName("CompanyId")
+            .HasDefaultValue(Guid.Empty);
 
         builder.Property(user => user.CreatedOnUtc).IsRequired();
 

@@ -1,10 +1,10 @@
 using TeamTasks.Application.Core.Settings;
-using TeamTasks.Database.Attendee;
+using TeamTasks.Database.Company;
 using TeamTasks.Database.GroupEvent;
 using TeamTasks.Database.Identity;
-using TeamTasks.Database.Invitation;
 using TeamTasks.Database.Notification;
 using TeamTasks.Database.PersonalEvent;
+using TeamTasks.Database.Tasks;
 
 namespace TeamTasks.Micro.Identity.Common.Entry;
 
@@ -19,11 +19,11 @@ public static class DiDatabase
         }
 
         services.AddUserDatabase(configuration);
-        services.AddAttendeesDatabase(configuration);
+        services.AddCompanyDatabase(configuration);
         services.AddPersonalEventDatabase(configuration);
         services.AddGroupEventDatabase(configuration);
-        services.AddInvitationsDatabase(configuration);
         services.AddNotificationsDatabase(configuration);
+        services.AddTasksDatabase(configuration);
         
         services.Configure<MongoSettings>(
             configuration.GetSection(MongoSettings.MongoSettingsKey));

@@ -15,3 +15,4 @@ G:\DotNetProjects\TeamTasks\TeamTasks.Database.PersonalEvent\obj\Debug\net8.0\Te
 G:\DotNetProjects\TeamTasks\TeamTasks.Database.PersonalEvent\obj\Debug\net8.0\refint\TeamTasks.Database.PersonalEvent.dll
 G:\DotNetProjects\TeamTasks\TeamTasks.Database.PersonalEvent\obj\Debug\net8.0\TeamTasks.Database.PersonalEvent.pdb
 G:\DotNetProjects\TeamTasks\TeamTasks.Database.PersonalEvent\obj\Debug\net8.0\ref\TeamTasks.Database.PersonalEvent.dll
+G:\DotNetProjects\TeamTasks\TeamTasks.Database.PersonalEvent\obj\Debug\net8.0\TeamTasks.Database.PersonalEvent.sourcelink.json

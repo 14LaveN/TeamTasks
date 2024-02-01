@@ -4,27 +4,20 @@ using Microsoft.Extensions.Caching.Memory;
 
 namespace TeamTasks.Cache.Service;
 
+/// <summary>
+/// Represents the distributed cache extenstion static class.
+/// </summary>
 public static class DistributedCacheExtensions
 {
-    //TODO Create the MemoryCacheExtensions
-    public static async Task<T> GetOrCreateAsync<T>(
-        this IMemoryCache cache,
-        string key,
-        Func<CancellationToken, Task<T>> factory,
-        TimeSpan? expiration = null,
-        CancellationToken cancellationToken = default)
-    {
-
-        T result = (await cache.GetOrCreateAsync<T>(key, entry =>
-        {
-            entry.SetAbsoluteExpiration(expiration ?? TimeSpan.FromMinutes(5));
-
-            return factory(cancellationToken);
-        }))!;
-
-        return result;
-    }
-    
+    /// <summary>
+    /// Set the record with distributed cache.
+    /// </summary>
+    /// <param name="cache">The memory cache.</param>
+    /// <param name="recordId">The cache key.</param>
+    /// <param name="data">The data.</param>
+    /// <param name="absoluteExpireTime">The expiration time span.</param>
+    /// <param name="unusedExpireTime">The unused expiration time span.</param>
+    /// <typeparam name="T">The generic type.</typeparam>
     public static async Task SetRecordAsync<T>(this IDistributedCache cache,
         string recordId,
         T data,
@@ -41,6 +34,13 @@ public static class DistributedCacheExtensions
         await cache.SetStringAsync(recordId, jsonData, options);
     }
 
+    /// <summary>
+    /// Set the record with distributed cache.
+    /// </summary>
+    /// <param name="cache">The memory cache.</param>
+    /// <param name="recordId">The cache key.</param>
+    /// <typeparam name="T">The generic type.</typeparam>
+    /// <returns>Return generic object.</returns>
     public static async Task<T> GetRecordAsync<T>(this IDistributedCache cache,
         string recordId)
     {

@@ -22,7 +22,7 @@ public static class DependencyInjection
             throw new ArgumentNullException(nameof(services));
         }
         
-        var connectionString = configuration.GetConnectionString("PAGenericDb");
+        var connectionString = configuration.GetConnectionString("TTGenericDb");
         
         services.AddDbContext<UserDbContext>(o => 
             o.UseNpgsql(connectionString, act 

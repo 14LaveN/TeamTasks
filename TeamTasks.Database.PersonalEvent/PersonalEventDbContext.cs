@@ -28,7 +28,7 @@ public class PersonalEventDbContext
     
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseNpgsql("Server=localhost;Port=5433;Database=PAGenericDb;User Id=postgres;Password=1111;");
+        optionsBuilder.UseNpgsql("Server=localhost;Port=5433;Database=TTGenericDb;User Id=postgres;Password=1111;");
     }
     
     /// <inheritdoc />

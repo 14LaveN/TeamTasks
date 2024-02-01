@@ -9,3 +9,4 @@ G:\DotNetProjects\TeamTasks\TeamTasks.Contracts\obj\Debug\net8.0\TeamTasks.Contr
 G:\DotNetProjects\TeamTasks\TeamTasks.Contracts\obj\Debug\net8.0\refint\TeamTasks.Contracts.dll
 G:\DotNetProjects\TeamTasks\TeamTasks.Contracts\obj\Debug\net8.0\TeamTasks.Contracts.pdb
 G:\DotNetProjects\TeamTasks\TeamTasks.Contracts\obj\Debug\net8.0\ref\TeamTasks.Contracts.dll
+G:\DotNetProjects\TeamTasks\TeamTasks.Contracts\obj\Debug\net8.0\TeamTasks.Contracts.sourcelink.json

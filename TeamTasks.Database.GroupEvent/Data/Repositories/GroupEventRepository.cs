@@ -17,15 +17,5 @@ internal sealed class GroupEventRepository : GenericRepository<Domain.Entities.G
     /// </summary>
     /// <param name="dbContext">The database context.</param>
     public GroupEventRepository(BaseDbContext<Domain.Entities.GroupEvent> dbContext)
-        : base(dbContext)
-    {
-    }
-
-    /// <inheritdoc />
-    public async Task<IReadOnlyCollection<Domain.Entities.GroupEvent>> GetForAttendeesAsync(IReadOnlyCollection<Attendee> attendees) =>
-        attendees.Count is not 0
-            ? await DbContext.Set<Domain.Entities.GroupEvent>()
-                .Where(new GroupEventForAttendeesSpecification(attendees))
-                .ToArrayAsync()
-            : Array.Empty<Domain.Entities.GroupEvent>();
+        : base(dbContext) { }
 }

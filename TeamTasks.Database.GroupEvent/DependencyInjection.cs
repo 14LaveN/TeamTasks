@@ -28,7 +28,7 @@ public static class DependencyInjection
             throw new ArgumentNullException(nameof(services));
         }
         
-        var connectionString = configuration.GetConnectionString("PAGenericDb");
+        var connectionString = configuration.GetConnectionString("TTGenericDb");
         
         services.AddDbContext<GroupEventDbContext>(o => 
             o.UseNpgsql(connectionString, act 
