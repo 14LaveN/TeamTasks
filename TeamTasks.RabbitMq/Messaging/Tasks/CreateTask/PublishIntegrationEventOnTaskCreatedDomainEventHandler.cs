@@ -1,8 +1,7 @@
 using TeamTasks.Domain.Core.Events;
 using TeamTasks.Domain.Events;
-using TeamTasks.RabbitMq.Messaging;
 
-namespace TeamTasks.Micro.TasksAPI.Events.CreateTask;
+namespace TeamTasks.RabbitMq.Messaging.Tasks.CreateTask;
 
 /// <summary>
 /// Represents the <see cref="PublishIntegrationEventOnTaskCreatedDomainEventHandler"/> class.

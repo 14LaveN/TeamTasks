@@ -18,19 +18,343 @@
         <member name="M:TeamTasks.Micro.TasksAPI.Behaviors.TaskTransactionBehavior`2.Handle(`0,MediatR.RequestHandlerDelegate{`1},System.Threading.CancellationToken)">
             <inheritdoc/>
         </member>
+        <member name="T:TeamTasks.Micro.TasksAPI.Commands.CreateTask.CreateTaskCommand">
+            <summary>
+            Represents the <see cref="T:TeamTasks.Micro.TasksAPI.Commands.CreateTask.CreateTaskCommand"/> record class.
+            </summary>
+            <param name="Title">The title.</param>
+            <param name="Priority">The task priority.</param>
+            <param name="Description">The description.</param>
+        </member>
+        <member name="M:TeamTasks.Micro.TasksAPI.Commands.CreateTask.CreateTaskCommand.#ctor(TeamTasks.Domain.ValueObjects.Name,TeamTasks.Domain.Enumerations.TaskPriority,System.String)">
+            <summary>
+            Represents the <see cref="T:TeamTasks.Micro.TasksAPI.Commands.CreateTask.CreateTaskCommand"/> record class.
+            </summary>
+            <param name="Title">The title.</param>
+            <param name="Priority">The task priority.</param>
+            <param name="Description">The description.</param>
+        </member>
+        <member name="P:TeamTasks.Micro.TasksAPI.Commands.CreateTask.CreateTaskCommand.Title">
+            <summary>The title.</summary>
+        </member>
+        <member name="P:TeamTasks.Micro.TasksAPI.Commands.CreateTask.CreateTaskCommand.Priority">
+            <summary>The task priority.</summary>
+        </member>
+        <member name="P:TeamTasks.Micro.TasksAPI.Commands.CreateTask.CreateTaskCommand.Description">
+            <summary>The description.</summary>
+        </member>
+        <member name="M:TeamTasks.Micro.TasksAPI.Commands.CreateTask.CreateTaskCommand.op_Implicit(TeamTasks.Micro.TasksAPI.Commands.CreateTask.CreateTaskCommand)~TeamTasks.Domain.Entities.TaskEntity">
+            <summary>
+            Create the answer entity class from <see cref="T:TeamTasks.Micro.TasksAPI.Commands.CreateTask.CreateTaskCommand"/> record.
+            </summary>
+            <param name="command">The create task command.</param>
+            <returns>The new task entity.</returns>
+        </member>
+        <member name="T:TeamTasks.Micro.TasksAPI.Commands.CreateTask.CreateTaskCommandHandler">
+            <summary>
+            Represents the create task command handler class.
+            </summary>
+        </member>
+        <member name="M:TeamTasks.Micro.TasksAPI.Commands.CreateTask.CreateTaskCommandHandler.#ctor(TeamTasks.Database.Tasks.Data.Interfaces.ITasksRepository,Microsoft.Extensions.Logging.ILogger{TeamTasks.Micro.TasksAPI.Commands.CreateTask.CreateTaskCommandHandler},TeamTasks.Application.Core.Abstractions.Helpers.JWT.IUserIdentifierProvider,TeamTasks.Database.Identity.Data.Interfaces.IUserRepository)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TeamTasks.Micro.TasksAPI.Commands.CreateTask.CreateTaskCommandHandler"/> class.
+            </summary>
+            <param name="tasksRepository">The tasks repository.</param>
+            <param name="logger">The logger.</param>
+            <param name="userIdentifierProvider">The user identifier provider.</param>
+            <param name="userRepository">The user repository.</param>
+        </member>
+        <member name="M:TeamTasks.Micro.TasksAPI.Commands.CreateTask.CreateTaskCommandHandler.Handle(TeamTasks.Micro.TasksAPI.Commands.CreateTask.CreateTaskCommand,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:TeamTasks.Micro.TasksAPI.Commands.DoneTask.DoneTaskCommand">
+            <summary>
+            Represents the <see cref="T:TeamTasks.Micro.TasksAPI.Commands.DoneTask.DoneTaskCommand"/> record class.
+            </summary>
+            <param name="TaskId">The task identifier.</param>
+        </member>
+        <member name="M:TeamTasks.Micro.TasksAPI.Commands.DoneTask.DoneTaskCommand.#ctor(System.Guid)">
+            <summary>
+            Represents the <see cref="T:TeamTasks.Micro.TasksAPI.Commands.DoneTask.DoneTaskCommand"/> record class.
+            </summary>
+            <param name="TaskId">The task identifier.</param>
+        </member>
+        <member name="P:TeamTasks.Micro.TasksAPI.Commands.DoneTask.DoneTaskCommand.TaskId">
+            <summary>The task identifier.</summary>
+        </member>
+        <member name="M:TeamTasks.Micro.TasksAPI.Commands.DoneTask.DoneTaskCommand.op_Implicit(System.Guid)~TeamTasks.Micro.TasksAPI.Commands.DoneTask.DoneTaskCommand">
+            <summary>
+            Create a new instance of the <see cref="T:TeamTasks.Micro.TasksAPI.Commands.DoneTask.DoneTaskCommand"/> record class from task identifier.
+            </summary>
+            <param name="taskId">The task identifier.</param>
+            <returns>The new <see cref="T:TeamTasks.Micro.TasksAPI.Commands.DoneTask.DoneTaskCommand"/> record class.</returns>
+        </member>
+        <member name="T:TeamTasks.Micro.TasksAPI.Commands.DoneTask.DoneTaskCommandHandler">
+            <summary>
+            Represents the done task command handler class.
+            </summary>
+        </member>
+        <member name="M:TeamTasks.Micro.TasksAPI.Commands.DoneTask.DoneTaskCommandHandler.#ctor(TeamTasks.Database.Tasks.Data.Interfaces.ITasksRepository,Microsoft.Extensions.Logging.ILogger{TeamTasks.Micro.TasksAPI.Commands.DoneTask.DoneTaskCommandHandler},TeamTasks.Application.Core.Abstractions.Helpers.JWT.IUserIdentifierProvider,TeamTasks.Database.Identity.Data.Interfaces.IUserRepository)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TeamTasks.Micro.TasksAPI.Commands.DoneTask.DoneTaskCommandHandler"/> class.
+            </summary>
+            <param name="tasksRepository">The tasks repository.</param>
+            <param name="logger">The logger.</param>
+            <param name="userIdentifierProvider">The user identifier provider.</param>
+            <param name="userRepository">The user repository.</param>
+        </member>
+        <member name="M:TeamTasks.Micro.TasksAPI.Commands.DoneTask.DoneTaskCommandHandler.Handle(TeamTasks.Micro.TasksAPI.Commands.DoneTask.DoneTaskCommand,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:TeamTasks.Micro.TasksAPI.Commands.UpdateTask.UpdateTaskCommand">
+             <summary>
+              Represents the <see cref="T:TeamTasks.Micro.TasksAPI.Commands.UpdateTask.UpdateTaskCommand"/> record class.
+             </summary>
+            <param name="Title">The title.</param>
+             <param name="Priority">The task priority.</param>
+             <param name="Description">The description.</param>
+             <param name="TaskId">The task identifier.</param>
+        </member>
+        <member name="M:TeamTasks.Micro.TasksAPI.Commands.UpdateTask.UpdateTaskCommand.#ctor(System.Guid,TeamTasks.Domain.ValueObjects.Name,TeamTasks.Domain.Enumerations.TaskPriority,System.String)">
+             <summary>
+              Represents the <see cref="T:TeamTasks.Micro.TasksAPI.Commands.UpdateTask.UpdateTaskCommand"/> record class.
+             </summary>
+            <param name="Title">The title.</param>
+             <param name="Priority">The task priority.</param>
+             <param name="Description">The description.</param>
+             <param name="TaskId">The task identifier.</param>
+        </member>
+        <member name="P:TeamTasks.Micro.TasksAPI.Commands.UpdateTask.UpdateTaskCommand.TaskId">
+            <summary>The task identifier.</summary>
+        </member>
+        <member name="P:TeamTasks.Micro.TasksAPI.Commands.UpdateTask.UpdateTaskCommand.Title">
+            <summary>The title.</summary>
+        </member>
+        <member name="P:TeamTasks.Micro.TasksAPI.Commands.UpdateTask.UpdateTaskCommand.Priority">
+            <summary>The task priority.</summary>
+        </member>
+        <member name="P:TeamTasks.Micro.TasksAPI.Commands.UpdateTask.UpdateTaskCommand.Description">
+            <summary>The description.</summary>
+        </member>
+        <member name="T:TeamTasks.Micro.TasksAPI.Commands.UpdateTask.UpdateTaskCommandHandler">
+            <summary>
+             Represents the update task command handler class.
+            </summary>
+        </member>
+        <member name="M:TeamTasks.Micro.TasksAPI.Commands.UpdateTask.UpdateTaskCommandHandler.#ctor(TeamTasks.Database.Tasks.Data.Interfaces.ITasksRepository,Microsoft.Extensions.Logging.ILogger{TeamTasks.Micro.TasksAPI.Commands.UpdateTask.UpdateTaskCommandHandler},TeamTasks.Application.Core.Abstractions.Helpers.JWT.IUserIdentifierProvider,TeamTasks.Database.Identity.Data.Interfaces.IUserRepository)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TeamTasks.Micro.TasksAPI.Commands.UpdateTask.UpdateTaskCommandHandler"/> class.
+            </summary>
+            <param name="tasksRepository">The tasks repository.</param>
+            <param name="logger">The logger.</param>
+            <param name="userIdentifierProvider">The user identifier provider.</param>
+            <param name="userRepository">The user repository.</param>
+        </member>
+        <member name="M:TeamTasks.Micro.TasksAPI.Commands.UpdateTask.UpdateTaskCommandHandler.Handle(TeamTasks.Micro.TasksAPI.Commands.UpdateTask.UpdateTaskCommand,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:TeamTasks.Micro.TasksAPI.Common.DependencyInjection.DiAuthentication.AddAuthenticationService(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="M:TeamTasks.Micro.TasksAPI.Common.DependencyInjection.DiCaching.AddCaching(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="M:TeamTasks.Micro.TasksAPI.Common.DependencyInjection.DiDatabase.AddDatabase(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <param name="configuration">The configuration.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="M:TeamTasks.Micro.TasksAPI.Common.DependencyInjection.DiLogging.AddLogs(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <param name="configuration">The configuration.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="M:TeamTasks.Micro.TasksAPI.Common.DependencyInjection.DiMediator.AddMediatrExtension(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="M:TeamTasks.Micro.TasksAPI.Common.DependencyInjection.DiValidator.AddValidators(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <returns>The same service collection.</returns>
+        </member>
         <member name="T:TeamTasks.Micro.TasksAPI.Configurations.SwaggerConfiguration">
             <summary>
             Represents the swagger configuration static class.
             </summary>
         </member>
-        <member name="T:TeamTasks.Micro.TasksAPI.Contracts.RequestLoggingMiddleware">
+        <member name="T:TeamTasks.Micro.TasksAPI.Contracts.Task.Create.CreateTaskResponse">
+            <summary>
+            Represents the response after create task class.
+            </summary>
+            <param name="Description">The description.</param>
+            <param name="Priority">The task priority.</param>
+            <param name="Title">The title.</param>
+            <param name="AuthorName">The author name.</param>
+            <param name="CreatedAt">The created at date/time.</param>
+        </member>
+        <member name="M:TeamTasks.Micro.TasksAPI.Contracts.Task.Create.CreateTaskResponse.#ctor(System.String,System.String,TeamTasks.Domain.Enumerations.TaskPriority,System.String,System.DateTime)">
+            <summary>
+            Represents the response after create task class.
+            </summary>
+            <param name="Description">The description.</param>
+            <param name="Priority">The task priority.</param>
+            <param name="Title">The title.</param>
+            <param name="AuthorName">The author name.</param>
+            <param name="CreatedAt">The created at date/time.</param>
+        </member>
+        <member name="P:TeamTasks.Micro.TasksAPI.Contracts.Task.Create.CreateTaskResponse.Title">
+            <summary>The title.</summary>
+        </member>
+        <member name="P:TeamTasks.Micro.TasksAPI.Contracts.Task.Create.CreateTaskResponse.AuthorName">
+            <summary>The author name.</summary>
+        </member>
+        <member name="P:TeamTasks.Micro.TasksAPI.Contracts.Task.Create.CreateTaskResponse.Priority">
+            <summary>The task priority.</summary>
+        </member>
+        <member name="P:TeamTasks.Micro.TasksAPI.Contracts.Task.Create.CreateTaskResponse.Description">
+            <summary>The description.</summary>
+        </member>
+        <member name="P:TeamTasks.Micro.TasksAPI.Contracts.Task.Create.CreateTaskResponse.CreatedAt">
+            <summary>The created at date/time.</summary>
+        </member>
+        <member name="M:TeamTasks.Micro.TasksAPI.Contracts.Task.Create.CreateTaskResponse.op_Implicit(TeamTasks.Domain.Entities.TaskEntity)~TeamTasks.Micro.TasksAPI.Contracts.Task.Create.CreateTaskResponse">
+            <summary>
+            Create the <see cref="T:TeamTasks.Micro.TasksAPI.Contracts.Task.Create.CreateTaskResponse"/> record from <see cref="T:TeamTasks.Domain.Entities.TaskEntity"/> class.
+            </summary>
+            <param name="taskEntity">The task entity class.</param>
+            <returns>The new instance of <see cref="T:TeamTasks.Micro.TasksAPI.Contracts.Task.Create.CreateTaskResponse"/> record class.</returns>
+        </member>
+        <member name="T:TeamTasks.Micro.TasksAPI.Controllers.V1.TasksController">
+            <summary>
+            Represents the task controller class.
+            </summary>
+            <param name="sender">The CQRS sender.</param>
+            <param name="userRepository">The <see cref="T:TeamTasks.Database.Identity.Data.Interfaces.IUserRepository"/>.</param>
+        </member>
+        <member name="M:TeamTasks.Micro.TasksAPI.Controllers.V1.TasksController.#ctor(MediatR.ISender,TeamTasks.Database.Identity.Data.Interfaces.IUserRepository)">
+            <summary>
+            Represents the task controller class.
+            </summary>
+            <param name="sender">The CQRS sender.</param>
+            <param name="userRepository">The <see cref="T:TeamTasks.Database.Identity.Data.Interfaces.IUserRepository"/>.</param>
+        </member>
+        <member name="M:TeamTasks.Micro.TasksAPI.Controllers.V1.TasksController.CreateTask(TeamTasks.Micro.TasksAPI.Contracts.Task.Create.CreateTaskRequest)">
+            <summary>
+            Create task.
+            </summary>
+            <param name="request">The <see cref="T:TeamTasks.Micro.TasksAPI.Contracts.Task.Create.CreateTaskRequest"/> class.</param>
+            <returns>Base information about create task method.</returns>
+            <remarks>
+            Example request:
+            </remarks>
+            <response code="200">OK.</response>
+            <response code="400">BadRequest.</response>
+            <response code="500">Internal server error</response>
+        </member>
+        <member name="M:TeamTasks.Micro.TasksAPI.Controllers.V1.TasksController.DoneTask(System.Guid)">
+            <summary>
+            Done task.
+            </summary>
+            <param name="taskId">The task identifier.</param>
+            <returns>Base information about done task method.</returns>
+            <remarks>
+            Example request:
+            </remarks>
+            <response code="200">OK.</response>
+            <response code="400">BadRequest.</response>
+            <response code="500">Internal server error</response>
+        </member>
+        <member name="M:TeamTasks.Micro.TasksAPI.Controllers.V1.TasksController.UpdateTask(TeamTasks.Micro.TasksAPI.Contracts.Task.Create.CreateTaskRequest,System.Guid)">
+            <summary>
+            Update task.
+            </summary>
+            <param name="request">The <see cref="T:TeamTasks.Micro.TasksAPI.Contracts.Task.Create.CreateTaskRequest"/> class.</param>
+            <param name="taskId">The task identifier.</param>
+            <returns>Base information about update task method.</returns>
+            <remarks>
+            Example request:
+            </remarks>
+            <response code="200">OK.</response>
+            <response code="400">BadRequest.</response>
+            <response code="500">Internal server error</response>
+        </member>
+        <member name="T:TeamTasks.Micro.TasksAPI.Events.CreateTask.PublishIntegrationEventOnTaskCreatedDomainEventHandler">
+            <summary>
+            Represents the <see cref="T:TeamTasks.Micro.TasksAPI.Events.CreateTask.PublishIntegrationEventOnTaskCreatedDomainEventHandler"/> class.
+            </summary>
+        </member>
+        <member name="M:TeamTasks.Micro.TasksAPI.Events.CreateTask.PublishIntegrationEventOnTaskCreatedDomainEventHandler.#ctor(TeamTasks.RabbitMq.Messaging.IIntegrationEventPublisher)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TeamTasks.Micro.TasksAPI.Events.CreateTask.PublishIntegrationEventOnTaskCreatedDomainEventHandler"/> class.
+            </summary>
+            <param name="integrationEventPublisher">The integration event publisher.</param>
+        </member>
+        <member name="T:TeamTasks.Micro.TasksAPI.Events.CreateTask.TaskCreatedIntegrationEvent">
+            <summary>
+            Represents the event that is raised when a task is created.
+            </summary>
+        </member>
+        <member name="M:TeamTasks.Micro.TasksAPI.Events.CreateTask.TaskCreatedIntegrationEvent.#ctor(TeamTasks.Domain.Events.TaskCreatedDomainEvent)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TeamTasks.Micro.TasksAPI.Events.CreateTask.TaskCreatedIntegrationEvent"/> class.
+            </summary>
+            <param name="domainEvent">The <see cref="T:TeamTasks.Domain.Events.TaskCreatedDomainEvent"/>.</param>
+        </member>
+        <member name="P:TeamTasks.Micro.TasksAPI.Events.CreateTask.TaskCreatedIntegrationEvent.TaskId">
+            <summary>
+            Gets the task identifier.
+            </summary>
+        </member>
+        <member name="T:TeamTasks.Micro.TasksAPI.Events.DoneTask.DoneTaskIntegrationEvent">
+            <summary>
+            Represents the event that is raised when the task is done.
+            </summary>
+        </member>
+        <member name="M:TeamTasks.Micro.TasksAPI.Events.DoneTask.DoneTaskIntegrationEvent.#ctor(TeamTasks.Domain.Events.DoneTaskDomainEvent)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TeamTasks.Micro.TasksAPI.Events.DoneTask.DoneTaskIntegrationEvent"/> class.
+            </summary>
+            <param name="domainEvent">The <see cref="T:TeamTasks.Domain.Events.DoneTaskDomainEvent"/> class.></param>
+        </member>
+        <member name="P:TeamTasks.Micro.TasksAPI.Events.DoneTask.DoneTaskIntegrationEvent.TaskId">
+            <summary>
+            Gets the task identifier.
+            </summary>
+        </member>
+        <member name="M:TeamTasks.Micro.TasksAPI.Events.DoneTask.PublishIntegrationEventOnDoneTaskIntegrationEventHandler.#ctor(TeamTasks.RabbitMq.Messaging.IIntegrationEventPublisher)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TeamTasks.Micro.TasksAPI.Events.DoneTask.PublishIntegrationEventOnDoneTaskIntegrationEventHandler"/> class.
+            </summary>
+            <param name="integrationEventPublisher">The integration event publisher.</param>
+        </member>
+        <member name="T:TeamTasks.Micro.TasksAPI.Middlewares.RequestLoggingMiddleware">
             <summary>
             The request logging middleware.
             </summary>
             <param name="logger">The logger.</param>
             <param name="next">The request delegate.</param>
         </member>
-        <member name="M:TeamTasks.Micro.TasksAPI.Contracts.RequestLoggingMiddleware.#ctor(Microsoft.Extensions.Logging.ILogger{TeamTasks.Micro.TasksAPI.Contracts.RequestLoggingMiddleware},Microsoft.AspNetCore.Http.RequestDelegate)">
+        <member name="M:TeamTasks.Micro.TasksAPI.Middlewares.RequestLoggingMiddleware.#ctor(Microsoft.Extensions.Logging.ILogger{TeamTasks.Micro.TasksAPI.Middlewares.RequestLoggingMiddleware},Microsoft.AspNetCore.Http.RequestDelegate)">
             <summary>
             The request logging middleware.
             </summary>

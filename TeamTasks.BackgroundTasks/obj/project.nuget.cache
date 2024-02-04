@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "uosX8Fy7s6ppR86jfoWF1SpbEYNYwnITwp+UfsI5RToiksVXA+cMpOysPcKOPeqnzL4LivyssfK4ihXALZazIA==",
+  "dgSpecHash": "FvSGt7VmQ+mQZCo9Ylp70wnMGgoSoZnm4zPorIPTbyoyd/rU3gs/izad5zKmwWeE+Ha3pJ84qm9sVDmwYjVWSQ==",
   "success": true,
   "projectFilePath": "G:\\DotNetProjects\\TeamTasks\\TeamTasks.BackgroundTasks\\TeamTasks.BackgroundTasks.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "C:\\Users\\ponom\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\dapper\\2.1.28\\dapper.2.1.28.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\mailkit\\4.3.0\\mailkit.4.3.0.nupkg.sha512",

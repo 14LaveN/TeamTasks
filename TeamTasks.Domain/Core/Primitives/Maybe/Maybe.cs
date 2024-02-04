@@ -36,7 +36,7 @@ public sealed class Maybe<T> : IEquatable<Maybe<T>>
     /// <summary>
     /// Gets the default empty instance.
     /// </summary>
-    public static Maybe<T> None => new Maybe<T>(default);
+    public static Maybe<T> None => new(default);
 
     /// <summary>
     /// Creates a new <see cref="Maybe{T}"/> instance based on the specified value.

@@ -8,6 +8,8 @@ using TeamTasks.Domain.Enumerations;
 
 namespace TeamTasks.BackgroundTasks.Services;
 
+//TODO Create the group event notifications producer and work with personal events.
+
 /// <summary>
 /// Represents the personal event notifications producer.
 /// </summary>
@@ -49,7 +51,7 @@ internal sealed class PersonalEventNotificationsProducer : IPersonalEventNotific
 
         var notifications = new List<Notification>();
 
-        foreach (PersonalEvent personalEvent in unprocessedPersonalEvents)
+        foreach (var personalEvent in unprocessedPersonalEvents)
         {
             Result result = personalEvent.MarkAsProcessed();
 

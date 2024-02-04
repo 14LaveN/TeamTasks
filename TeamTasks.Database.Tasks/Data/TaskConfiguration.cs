@@ -13,7 +13,8 @@ internal sealed class TaskConfiguration : IEntityTypeConfiguration<TaskEntity>
     public void Configure(EntityTypeBuilder<TaskEntity> builder)
     {
         builder.ToTable("tasks");
-        
+
+        #region Fields
         builder.HasIndex(x => x.Id)
             .HasDatabaseName("IdTaskIndex")
             .IsUnique();
@@ -21,14 +22,32 @@ internal sealed class TaskConfiguration : IEntityTypeConfiguration<TaskEntity>
         builder.Property(x => x.Id)
             .ValueGeneratedNever();
         
+        builder.Property(x => x.CompanyId)
+            .HasField("CompanyId")
+            .HasColumnName("CompanyId")
+            .HasDefaultValue(Guid.Empty);
+        
+        builder.Property(x => x.PerformerOfWorkId)
+            .HasField("PerformerOfWorkId")
+            .HasColumnName("PerformerOfWorkId")
+            .HasDefaultValue(Guid.Empty);
+        #endregion
+        
+        #region RelationShip
         builder.HasOne(x => x.Company)
             .WithMany(x => x.Tasks)
             .HasForeignKey(x=>x.CompanyId)
             .OnDelete(DeleteBehavior.Restrict);
 
         builder.HasOne(x => x.Author)
-            .WithMany(x => x.Tasks)
+            .WithMany(x => x.YourTasks)
             .HasForeignKey(x=>x.AuthorId)
             .OnDelete(DeleteBehavior.Restrict);
+        
+        builder.HasOne(x => x.PerformerOfWork)
+            .WithMany(x => x.CompletedTasks)
+            .HasForeignKey(x=>x.PerformerOfWorkId)
+            .OnDelete(DeleteBehavior.Restrict);
+        #endregion
     }
 }

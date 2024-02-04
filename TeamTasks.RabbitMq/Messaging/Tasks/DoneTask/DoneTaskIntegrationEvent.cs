@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 using TeamTasks.Application.Core.Abstractions.Messaging;
 using TeamTasks.Domain.Events;
 
-namespace TeamTasks.Micro.TasksAPI.Events.DoneTask;
+namespace TeamTasks.RabbitMq.Messaging.Tasks.DoneTask;
 
 /// <summary>
 /// Represents the event that is raised when the task is done.

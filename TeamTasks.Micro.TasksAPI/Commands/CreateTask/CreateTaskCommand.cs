@@ -11,16 +11,12 @@ namespace TeamTasks.Micro.TasksAPI.Commands.CreateTask;
 /// Represents the <see cref="CreateTaskCommand"/> record class.
 /// </summary>
 /// <param name="Title">The title.</param>
-/// <param name="AuthorId">The author identifier.</param>
-/// <param name="CompanyId">The company identifier.</param>
 /// <param name="Priority">The task priority.</param>
 /// <param name="Description">The description.</param>
 public sealed record CreateTaskCommand(
     Name Title,
-    Guid AuthorId,
     TaskPriority Priority,
-    string Description,
-    Guid CompanyId)
+    string Description)
     : ICommand<IBaseResponse<Result>>
 {
     /// <summary>
@@ -32,11 +28,11 @@ public sealed record CreateTaskCommand(
     {
         return new TaskEntity(
             command.Title,
-            command.AuthorId,
+            Guid.Empty, 
             command.Priority,
             DateTime.UtcNow,
             false,
             command.Description,
-            command.CompanyId);
+            Guid.Empty);
     }
 }

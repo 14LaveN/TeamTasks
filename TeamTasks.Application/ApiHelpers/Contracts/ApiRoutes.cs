@@ -7,15 +7,17 @@ public static class ApiRoutes
 {
     
     /// <summary>
-    /// Contains the answer routes.
+    /// Contains the task routes.
     /// </summary>
-    public static class Answer
+    public static class Task
     {
-        public const string Create = "create-answer";
+        public const string Create = "create-task";
 
-        public const string Answered = "answered/{answerId:guid}";
+        public const string DoneTask = "donetask/{taskId:guid}";
 
-        public const string GetAnswerById = "get-answer/{answerId:guid}";
+        public const string GetTaskById = "get-task/{taskId:guid}";
+        
+        public const string Update = "update-task/{taskId:guid}";
     }
     
     /// <summary>

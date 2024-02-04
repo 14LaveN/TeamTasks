@@ -1,30 +1,29 @@
 ﻿using TeamTasks.Domain.Core.Primitives.Maybe;
 
-namespace TeamTasks.Database.PersonalEvent.Data.Interfaces
+namespace TeamTasks.Database.PersonalEvent.Data.Interfaces;
+
+/// <summary>
+/// Represents the personal event repository interface.
+/// </summary>
+public interface IPersonalEventRepository
 {
     /// <summary>
-    /// Represents the personal event repository interface.
+    /// Gets the personal event with the specified identifier.
     /// </summary>
-    public interface IPersonalEventRepository
-    {
-        /// <summary>
-        /// Gets the personal event with the specified identifier.
-        /// </summary>
-        /// <param name="personalEventId">The personal event identifier.</param>
-        /// <returns>The maybe instance that may contain the personal event with the specified identifier.</returns>
-        Task<Maybe<Domain.Entities.PersonalEvent>> GetByIdAsync(Guid personalEventId);
+    /// <param name="personalEventId">The personal event identifier.</param>
+    /// <returns>The maybe instance that may contain the personal event with the specified identifier.</returns>
+    Task<Maybe<Domain.Entities.PersonalEvent>> GetByIdAsync(Guid personalEventId);
 
-        /// <summary>
-        /// Gets the specified number of unprocessed personal events, if they exist.
-        /// </summary>
-        /// <param name="take">The number of personal events to take.</param>
-        /// <returns>The specified number of unprocessed personal events, if they exist.</returns>
-        Task<IReadOnlyCollection<Domain.Entities.PersonalEvent>> GetUnprocessedAsync(int take);
+    /// <summary>
+    /// Gets the specified number of unprocessed personal events, if they exist.
+    /// </summary>
+    /// <param name="take">The number of personal events to take.</param>
+    /// <returns>The specified number of unprocessed personal events, if they exist.</returns>
+    Task<IReadOnlyCollection<Domain.Entities.PersonalEvent>> GetUnprocessedAsync(int take);
 
-        /// <summary>
-        /// Inserts the specified personal event to the database.
-        /// </summary>
-        /// <param name="personalEvent">The personal event to be inserted to the database.</param>
-        Task Insert(Domain.Entities.PersonalEvent personalEvent);
-    }
+    /// <summary>
+    /// Inserts the specified personal event to the database.
+    /// </summary>
+    /// <param name="personalEvent">The personal event to be inserted to the database.</param>
+    Task Insert(Domain.Entities.PersonalEvent personalEvent);
 }

@@ -22,7 +22,6 @@ public static class DiDatabase
         }
 
         services.AddUserDatabase(configuration);
-        
         services.AddMongoDatabase(configuration);
         services.AddTasksDatabase(configuration);
         

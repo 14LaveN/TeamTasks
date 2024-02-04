@@ -6,7 +6,7 @@ using TeamTasks.Domain.Core.Primitives;
 
 namespace TeamTasks.Database.Common.Interceptors;
 
-public sealed class AuditableEntityInterceptor<T>(T user,
+public sealed class AuditableEntityInterceptor<T>(
     TimeProvider dateTime) : SaveChangesInterceptor where T : Entity
 {
     public override InterceptionResult<int> SavingChanges(DbContextEventData eventData, InterceptionResult<int> result)

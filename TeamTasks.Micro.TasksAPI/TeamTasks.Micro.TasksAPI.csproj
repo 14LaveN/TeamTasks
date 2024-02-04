@@ -17,9 +17,6 @@
 
     <ItemGroup>
       <Folder Include="Commands\DeleteTask\" />
-      <Folder Include="Commands\DoneTask\" />
-      <Folder Include="Commands\UpdateTask\" />
-      <Folder Include="Controllers\V1\" />
       <Folder Include="Queries\GetAuthorTasksByIsDone\" />
       <Folder Include="Queries\GetCompanyTasksByIsDone\" />
       <Folder Include="Queries\GetTaskById\" />

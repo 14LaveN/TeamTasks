@@ -139,6 +139,19 @@
           }
         }
       },
+      "Dapper/2.1.28": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/Dapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Dapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "DnsClient/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -2835,6 +2848,21 @@
           "bin/placeholder/TeamTasks.Database.PersonalEvent.dll": {}
         }
       },
+      "TeamTasks.Database.Tasks/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Dapper": "2.1.28",
+          "MediatR": "12.2.0",
+          "TeamTasks.Database.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TeamTasks.Database.Tasks.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TeamTasks.Database.Tasks.dll": {}
+        }
+      },
       "TeamTasks.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -3065,6 +3093,27 @@
         "lib/netstandard2.0/BouncyCastle.Cryptography.dll",
         "lib/netstandard2.0/BouncyCastle.Cryptography.xml",
         "packageIcon.png"
+      ]
+    },
+    "Dapper/2.1.28": {
+      "sha512": "ha49pzOEDmCPkMxwfPSR/wxa/6RD3r42TESIgpzpi7FXq/gNVUuJVEO+wtUzntNRhtmq3BKCl0s0aAlSZLkBUA==",
+      "type": "package",
+      "path": "dapper/2.1.28",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Dapper.png",
+        "dapper.2.1.28.nupkg.sha512",
+        "dapper.nuspec",
+        "lib/net461/Dapper.dll",
+        "lib/net461/Dapper.xml",
+        "lib/net5.0/Dapper.dll",
+        "lib/net5.0/Dapper.xml",
+        "lib/net7.0/Dapper.dll",
+        "lib/net7.0/Dapper.xml",
+        "lib/netstandard2.0/Dapper.dll",
+        "lib/netstandard2.0/Dapper.xml",
+        "readme.md"
       ]
     },
     "DnsClient/1.6.1": {
@@ -7627,6 +7676,11 @@
       "path": "../TeamTasks.Database.PersonalEvent/TeamTasks.Database.PersonalEvent.csproj",
       "msbuildProject": "../TeamTasks.Database.PersonalEvent/TeamTasks.Database.PersonalEvent.csproj"
     },
+    "TeamTasks.Database.Tasks/1.0.0": {
+      "type": "project",
+      "path": "../TeamTasks.Database.Tasks/TeamTasks.Database.Tasks.csproj",
+      "msbuildProject": "../TeamTasks.Database.Tasks/TeamTasks.Database.Tasks.csproj"
+    },
     "TeamTasks.Domain/1.0.0": {
       "type": "project",
       "path": "../TeamTasks.Domain/TeamTasks.Domain.csproj",
@@ -7658,6 +7712,7 @@
       "TeamTasks.Application >= 1.0.0",
       "TeamTasks.Database.GroupEvent >= 1.0.0",
       "TeamTasks.Database.PersonalEvent >= 1.0.0",
+      "TeamTasks.Database.Tasks >= 1.0.0",
       "TeamTasks.Events.GroupEvent >= 1.0.0"
     ]
   },
@@ -7701,6 +7756,9 @@
             },
             "G:\\DotNetProjects\\TeamTasks\\TeamTasks.Database.PersonalEvent\\TeamTasks.Database.PersonalEvent.csproj": {
               "projectPath": "G:\\DotNetProjects\\TeamTasks\\TeamTasks.Database.PersonalEvent\\TeamTasks.Database.PersonalEvent.csproj"
+            },
+            "G:\\DotNetProjects\\TeamTasks\\TeamTasks.Database.Tasks\\TeamTasks.Database.Tasks.csproj": {
+              "projectPath": "G:\\DotNetProjects\\TeamTasks\\TeamTasks.Database.Tasks\\TeamTasks.Database.Tasks.csproj"
             },
             "G:\\DotNetProjects\\TeamTasks\\TeamTasks.Events.GroupEvent\\TeamTasks.Events.GroupEvent.csproj": {
               "projectPath": "G:\\DotNetProjects\\TeamTasks\\TeamTasks.Events.GroupEvent\\TeamTasks.Events.GroupEvent.csproj"

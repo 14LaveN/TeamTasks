@@ -16,4 +16,8 @@
       <PackageReference Include="RabbitMQ.Client" Version="7.0.0-alpha.2" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Messaging\Tasks\DeleteTask\" />
+    </ItemGroup>
+
 </Project>

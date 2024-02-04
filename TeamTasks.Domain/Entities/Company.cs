@@ -34,7 +34,7 @@ public sealed class Company
     /// <summary>
     /// Gets or sets name.
     /// </summary>
-    public Name CompanyName { get; set; }
+    public Name CompanyName { get; set; } = null!;
 
     /// <summary>
     /// Gets or sets date/time created at.
@@ -44,7 +44,7 @@ public sealed class Company
     /// <summary>
     /// Gets or sets description.
     /// </summary>
-    public string Description { get; set; }
+    public string Description { get; set; } = null!;
 
     /// <summary>
     /// Navigation field.

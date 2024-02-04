@@ -31,6 +31,17 @@ internal sealed class UserConfiguration : IEntityTypeConfiguration<User>
             .WithMany(x => x.Users)
             .HasForeignKey(x => x.CompanyId)
             .OnDelete(DeleteBehavior.Restrict);
+        
+        builder.HasMany(x => x.CompletedTasks)
+            .WithOne(x => x.PerformerOfWork)
+            .HasForeignKey(x => x.PerformerOfWorkId)
+            .OnDelete(DeleteBehavior.Restrict);
+        
+        builder.HasMany(x => x.YourTasks)
+            .WithOne(x => x.Author)
+            .HasForeignKey(x => x.AuthorId)
+            .OnDelete(DeleteBehavior.Restrict);
+
 
         builder.OwnsOne(user => user.FirstName, firstNameBuilder =>
         {

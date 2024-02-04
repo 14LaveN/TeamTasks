@@ -13,13 +13,13 @@ public interface IEmailNotificationService
     /// <param name="welcomeEmail">The welcome emailAddress.</param>
     /// <returns>The completed task.</returns>
     Task SendWelcomeEmail(WelcomeEmail welcomeEmail);
-
+    
     /// <summary>
-    /// Sends the attendee created emailAddress.
+    /// Sends the done task emailAddress notification based on the specified request.
     /// </summary>
-    /// <param name="attendeeCreatedEmail">The attendee created emailAddress.</param>
+    /// <param name="doneTaskEmail">The done task emailAddress.</param>
     /// <returns>The completed task.</returns>
-    Task SendAttendeeCreatedEmail(AttendeeCreatedEmail attendeeCreatedEmail);
+    Task SendDoneTaskEmail(DoneTaskEmail doneTaskEmail);
 
     /// <summary>
     /// Sends the group event cancelled emailAddress.
@@ -41,27 +41,6 @@ public interface IEmailNotificationService
     /// <param name="groupEventDateAndTimeChangedEmail">The group event date and time changed emailAddress.</param>
     /// <returns>The completed task.</returns>
     Task SendGroupEventDateAndTimeChangedEmail(GroupEventDateAndTimeChangedEmail groupEventDateAndTimeChangedEmail);
-
-    /// <summary>
-    /// Sends the invitation sent emailAddress.
-    /// </summary>
-    /// <param name="invitationSentEmail">The invitation sent emailAddress.</param>
-    /// <returns>The completed task.</returns>
-    Task SendInvitationSentEmail(InvitationSentEmail invitationSentEmail);
-
-    /// <summary>
-    /// Sends the invitation accepted emailAddress.
-    /// </summary>
-    /// <param name="invitationAcceptedEmail">The invitation accepted emailAddress.</param>
-    /// <returns>The completed task.</returns>
-    Task SendInvitationAcceptedEmail(InvitationAcceptedEmail invitationAcceptedEmail);
-
-    /// <summary>
-    /// Sends the invitation rejected emailAddress.
-    /// </summary>
-    /// <param name="invitationRejectedEmail">The invitation rejected emailAddress.</param>
-    /// <returns>The completed task.</returns>
-    Task SendInvitationRejectedEmail(InvitationRejectedEmail invitationRejectedEmail);
 
     /// <summary>
     /// Sends the password changed emailAddress.

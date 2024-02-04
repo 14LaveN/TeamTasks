@@ -67,7 +67,12 @@ public sealed class User : IdentityUser<Guid>, IAuditableEntity, ISoftDeletableE
     /// <summary>
     /// Navigation field.
     /// </summary>
-    public ICollection<TaskEntity>? Tasks { get; set; }
+    public ICollection<TaskEntity>? YourTasks { get; set; }
+    
+    /// <summary>
+    /// Navigation field.
+    /// </summary>
+    public ICollection<TaskEntity>? CompletedTasks { get; set; }
 
     /// <summary>
     /// Gets or sets <see cref="Company"/> class.

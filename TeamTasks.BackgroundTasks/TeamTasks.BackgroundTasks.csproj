@@ -18,7 +18,14 @@
       <ProjectReference Include="..\TeamTasks.Application\TeamTasks.Application.csproj" />
       <ProjectReference Include="..\TeamTasks.Database.GroupEvent\TeamTasks.Database.GroupEvent.csproj" />
       <ProjectReference Include="..\TeamTasks.Database.PersonalEvent\TeamTasks.Database.PersonalEvent.csproj" />
+      <ProjectReference Include="..\TeamTasks.Database.Tasks\TeamTasks.Database.Tasks.csproj" />
       <ProjectReference Include="..\TeamTasks.Events.GroupEvent\TeamTasks.Events.GroupEvent.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="IntegrationEvents\Tasks\TaskCreated\" />
+      <Folder Include="IntegrationEvents\Tasks\TaskDeleted\" />
+      <Folder Include="IntegrationEvents\Tasks\TaskUpdated\" />
     </ItemGroup>
 
 </Project>

@@ -1,22 +1,21 @@
 ﻿using TeamTasks.Domain.Core.Events;
 using TeamTasks.Domain.Entities;
 
-namespace TeamTasks.Domain.Events
+namespace TeamTasks.Domain.Events;
+
+/// <summary>
+/// Represents the event that is raised when a personal event is cancelled.
+/// </summary>
+public sealed class PersonalEventCancelledDomainEvent : IDomainEvent
 {
     /// <summary>
-    /// Represents the event that is raised when a personal event is cancelled.
+    /// Initializes a new instance of the <see cref="PersonalEventCancelledDomainEvent"/> class.
     /// </summary>
-    public sealed class PersonalEventCancelledDomainEvent : IDomainEvent
-    {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PersonalEventCancelledDomainEvent"/> class.
-        /// </summary>
-        /// <param name="personalEvent">The personal event.</param>
-        internal PersonalEventCancelledDomainEvent(PersonalEvent personalEvent) => PersonalEvent = personalEvent;
+    /// <param name="personalEvent">The personal event.</param>
+    internal PersonalEventCancelledDomainEvent(PersonalEvent personalEvent) => PersonalEvent = personalEvent;
 
-        /// <summary>
-        /// Gets the personal event.
-        /// </summary>
-        public PersonalEvent PersonalEvent { get; }
-    }
+    /// <summary>
+    /// Gets the personal event.
+    /// </summary>
+    public PersonalEvent PersonalEvent { get; }
 }
