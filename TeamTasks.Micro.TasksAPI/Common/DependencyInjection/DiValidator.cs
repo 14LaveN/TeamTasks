@@ -1,5 +1,7 @@
 using FluentValidation;
 using TeamTasks.Micro.TasksAPI.Commands.CreateTask;
+using TeamTasks.Micro.TasksAPI.Commands.DoneTask;
+using TeamTasks.Micro.TasksAPI.Commands.UpdateTask;
 
 namespace TeamTasks.Micro.TasksAPI.Common.DependencyInjection;
 
@@ -18,6 +20,8 @@ public static class DiValidator
         }
         
         services.AddScoped<IValidator<CreateTaskCommand>, CreateTaskCommandValidator>();
+        services.AddScoped<IValidator<DoneTaskCommand>, DoneTaskCommandValidator>();
+        services.AddScoped<IValidator<UpdateTaskCommand>, UpdateTaskCommandValidator>();
         
         return services;
     }

@@ -7,7 +7,7 @@ namespace TeamTasks.Micro.Identity.Commands.Register;
 public class RegisterCommand : IRequest<LoginResponse<User>>
 {
     /// <summary>
-    /// Initializes a new instance of the <see cref="CreateUserCommand"/> class.
+    /// Initializes a new instance of the <see cref="RegisterCommand"/> class.
     /// </summary>
     /// <param name="firstName">The first name.</param>
     /// <param name="lastName">The last name.</param>

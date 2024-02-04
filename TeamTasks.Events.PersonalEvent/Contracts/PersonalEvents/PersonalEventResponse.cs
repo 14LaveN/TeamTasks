@@ -23,7 +23,7 @@ public sealed class PersonalEventResponse
     /// <summary>
     /// Gets or sets the category.
     /// </summary>
-    public string Category { get; set; }
+    public string Category { get; set; } = null!;
 
     /// <summary>
     /// Gets or sets the date and time in UTC format.

@@ -13,7 +13,8 @@ namespace TeamTasks.BackgroundTasks.IntegrationEvents.Users.UserCreated;
 /// <summary>
 /// Represents the <see cref="UserCreatedIntegrationEvent"/> handler.
 /// </summary>
-internal sealed class SendWelcomeEmailOnUserCreatedIntegrationEventHandler : IIntegrationEventHandler<UserCreatedIntegrationEvent>
+internal sealed class SendWelcomeEmailOnUserCreatedIntegrationEventHandler 
+    : IIntegrationEventHandler<UserCreatedIntegrationEvent>
 {
     private readonly IUserRepository _userRepository;
     private readonly IEmailNotificationService _emailNotificationService;

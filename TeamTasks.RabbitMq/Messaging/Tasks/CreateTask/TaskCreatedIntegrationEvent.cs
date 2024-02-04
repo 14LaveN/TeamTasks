@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 using TeamTasks.Application.Core.Abstractions.Messaging;
 using TeamTasks.Domain.Events;
 
-namespace TeamTasks.Micro.TasksAPI.Events.CreateTask;
+namespace TeamTasks.RabbitMq.Messaging.Tasks.CreateTask;
 
 /// <summary>
 /// Represents the event that is raised when a task is created.

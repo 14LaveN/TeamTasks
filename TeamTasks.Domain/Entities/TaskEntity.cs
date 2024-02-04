@@ -25,7 +25,8 @@ public sealed class TaskEntity
     /// <param name="isDone">The is done checkbox.</param>
     /// <param name="description">The description.</param>
     /// <param name="companyId">The company identifier.</param>
-    public TaskEntity(Name title, Guid authorId, TaskPriority priority, DateTime createdAt, bool isDone, string description, Guid companyId)
+    /// <param name="performerOfWorkId">The performer of work identifier.</param>
+    public TaskEntity(Name title, Guid authorId, TaskPriority priority, DateTime createdAt, bool isDone, string description, Guid companyId, Guid performerOfWorkId = default)
         : base(Guid.NewGuid())
     {
         Ensure.NotNull(title, "The name is required.", nameof(title));
@@ -39,6 +40,7 @@ public sealed class TaskEntity
         AuthorId = authorId;
         Description = description;
         CompanyId = companyId;
+        PerformerOfWorkId = performerOfWorkId;
         Priority = priority;
         CreatedAt = createdAt;
     }
@@ -52,6 +54,11 @@ public sealed class TaskEntity
     /// Gets or sets author class.
     /// </summary>
     public User? Author { get; set; }
+
+    /// <summary>
+    /// Gets or sets performer of work user class.
+    /// </summary>
+    public User? PerformerOfWork { get; set; }
 
     /// <summary>
     /// Gets or sets <see cref="Company"/> class.
@@ -68,6 +75,11 @@ public sealed class TaskEntity
     /// </summary>
     public Guid AuthorId { get; }
     
+    /// <summary>
+    /// Gets or sets Performer Of Work user identifier.
+    /// </summary>
+    public Guid PerformerOfWorkId { get; set; }
+
     /// <summary>
     /// Gets or sets is done checkbox.
     /// </summary>
@@ -86,7 +98,7 @@ public sealed class TaskEntity
     /// <summary>
     /// Gets or sets task priority.
     /// </summary>
-    public TaskPriority Priority { get; }
+    public TaskPriority Priority { get; set; }
 
     /// <inheritdoc />
     public DateTime CreatedOnUtc { get; }
@@ -104,16 +116,17 @@ public sealed class TaskEntity
     /// Creates a new task with the specified author id, createdAt, title and description.
     /// </summary>
     /// <param name="authorId">The author id.</param>
-    /// <param name="createdAt">The created at.</param>
     /// <param name="priority">The task priority.</param>
     /// <param name="description">The description.</param>
     /// <param name="title">The title.</param>
+    /// <param name="companyId">The company identifier.</param>
     /// <returns>The newly created answer instance.</returns>
     public static TaskEntity Create(
         Guid authorId, 
         TaskPriority priority,
         string description,
-        Name title)
+        Name title,
+        Guid companyId)
     {
         var task = new TaskEntity(
             title,
@@ -122,13 +135,19 @@ public sealed class TaskEntity
             DateTime.UtcNow, 
             false,
             description,
-            default);
+            companyId);
 
         task.AddDomainEvent(new TaskCreatedDomainEvent(task));
         return task;
     }
     
-    public async Task<Result> DoneTask(TaskEntity answerEntity, User user)
+    /// <summary>
+    /// Done task with <see cref="TaskEntity"/> and <see cref="User"/> classes.
+    /// </summary>
+    /// <param name="taskEntity">The <see cref="TaskEntity"/> class.</param>
+    /// <param name="user">The <see cref="User"/> class.</param>
+    /// <returns>Return result.</returns>
+    public async Task<Result> DoneTask(TaskEntity taskEntity, User user)
     {
         if (IsDone)
         {
@@ -136,8 +155,9 @@ public sealed class TaskEntity
         }
 
         IsDone = true;
+        PerformerOfWorkId = user.Id;
 
-        AddDomainEvent(new DoneTaskDomainEvent(answerEntity, user));
+        AddDomainEvent(new DoneTaskDomainEvent(taskEntity, user));
 
         return await Result.Success();
     }

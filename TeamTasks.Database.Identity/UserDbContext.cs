@@ -158,7 +158,7 @@ public class UserDbContext
                 return;
             }
 
-            foreach (ReferenceEntry referenceEntry in entityEntry.References.Where(r => r.TargetEntry.State == EntityState.Deleted))
+            foreach (ReferenceEntry referenceEntry in entityEntry.References.Where(r => r.TargetEntry is not null && r.TargetEntry.State == EntityState.Deleted))
             {
                 if (referenceEntry.TargetEntry != null)
                 {

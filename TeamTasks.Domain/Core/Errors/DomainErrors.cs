@@ -8,6 +8,17 @@ namespace TeamTasks.Domain.Core.Errors;
 public static class DomainErrors
 {
     /// <summary>
+    /// Contains the task errors.
+    /// </summary>
+    public static class Task
+    {
+        public static Error NotFound =>
+            new("Task.NotFound", "The task with the specified identifier was not found.");
+        
+        public static Error AlreadyDone => new("Task.AlreadyDone", "The task with the specified identifier already done.");
+    }
+
+    /// <summary>
     /// Contains the user errors.
     /// </summary>
     public static class User

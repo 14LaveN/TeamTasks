@@ -27,7 +27,7 @@ public static class DiAuthentication
             })
             .AddJwtBearer(options =>
             {
-                var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("secretsecret123456"));
+                var key = new SymmetricSecurityKey("secretsecret123456"u8.ToArray());
 
                 options.TokenValidationParameters.ValidIssuer = "https://localhost:7006/";
                 options.TokenValidationParameters.ValidAudiences

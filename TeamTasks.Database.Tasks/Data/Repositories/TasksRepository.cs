@@ -1,6 +1,5 @@
 using Dapper;
 using Microsoft.Data.SqlClient;
-using Microsoft.EntityFrameworkCore;
 using TeamTasks.Database.Common;
 using TeamTasks.Database.Tasks.Data.Interfaces;
 using TeamTasks.Domain.Core.Primitives.Maybe;
@@ -27,25 +26,25 @@ internal sealed class TasksRepository : GenericRepository<TaskEntity>, ITasksRep
     /// <inheritdoc />
     public async Task<Result<TaskEntity>> UpdateTask(TaskEntity task)
     {
-        const string sql = @"
-                UPDATE tasks
-                SET ModifiedOnUtc= @ModifiedOnUtc,
-                    IsDone = @IsDone,
-                    Priority = @Priority,
-                    Title = @Title,
-                    Description = @Description
-                WHERE Id = @Id AND Deleted = 0";
+        const string sql = """
+                           
+                                           UPDATE dbo.tasks
+                                           SET ModifiedOnUtc= @ModifiedOnUtc,
+                                               Priority = @Priority,
+                                               Title = @Title,
+                                               Description = @Description
+                                           WHERE Id = @Id AND Deleted = 0
+                           """;
         
         SqlParameter[] parameters =
         {
             new("@ModifiedOnUtc", DateTime.UtcNow),
             new("@Title", task.Title.Value),
             new("@Id", task.Id),
-            new("@IsDone", task.IsDone),
             new("@Priority", task.Priority),
             new("@Description", task.Description)
         };
-        var result = await DbContext.ExecuteSqlAsync(sql, parameters);
+        int result = await DbContext.ExecuteSqlAsync(sql, parameters);
         
         return result is not 0 ? task : throw new ArgumentException();
     }
@@ -58,11 +57,11 @@ internal sealed class TasksRepository : GenericRepository<TaskEntity>, ITasksRep
         
         await connection.OpenAsync();
         
-        var query = $"""
+        var query = """
                         SELECT t.Description, t.IsDone, t.Title,
                                t.CreatedAt, t.Priority, u.UserName 
-                        FROM tasks AS t
-                        INNER JOIN AspNetUsers AS u 
+                        FROM dbo.tasks AS t
+                        INNER JOIN dbp.AspNetUsers AS u 
                         ON @AuthorId = u.Id
                         GROUP BY t.Description, t.IsDone, t.Title,
                                  t.CreatedAt, t.Priority, u.UserName 
@@ -85,8 +84,8 @@ internal sealed class TasksRepository : GenericRepository<TaskEntity>, ITasksRep
         var query = $"""
                          SELECT t.Description, t.IsDone, t.Title,
                                 t.CreatedAt, t.Priority, c.Id
-                         FROM tasks AS t
-                         INNER JOIN companies AS c
+                         FROM dbo.tasks AS t
+                         INNER JOIN dbo.companies AS c
                          ON @ComapnyId = c.Id
                          GROUP BY t.Description, t.IsDone, t.Title,
                                   t.CreatedAt, t.Priority, c.UserName

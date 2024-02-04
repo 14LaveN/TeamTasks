@@ -1,8 +1,7 @@
 using TeamTasks.Domain.Core.Events;
 using TeamTasks.Domain.Events;
-using TeamTasks.RabbitMq.Messaging;
 
-namespace TeamTasks.Micro.TasksAPI.Events.DoneTask;
+namespace TeamTasks.RabbitMq.Messaging.Tasks.DoneTask;
 
 public sealed class PublishIntegrationEventOnDoneTaskIntegrationEventHandler
     : IDomainEventHandler<DoneTaskDomainEvent>
