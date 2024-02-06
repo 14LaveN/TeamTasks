@@ -27,7 +27,6 @@ internal sealed class TasksRepository : GenericRepository<TaskEntity>, ITasksRep
     public async Task<Result<TaskEntity>> UpdateTask(TaskEntity task)
     {
         const string sql = """
-                           
                                            UPDATE dbo.tasks
                                            SET ModifiedOnUtc= @ModifiedOnUtc,
                                                Priority = @Priority,

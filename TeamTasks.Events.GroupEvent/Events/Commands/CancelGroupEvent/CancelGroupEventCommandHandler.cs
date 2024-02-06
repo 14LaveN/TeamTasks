@@ -50,6 +50,8 @@ internal sealed class CancelGroupEventCommandHandler : ICommandHandler<CancelGro
             return Result.Failure(DomainErrors.User.InvalidPermissions);
         }
 
+        groupEvent.Processed = false;
+
         Result result = groupEvent.Cancel(_dateTime.UtcNow);
 
         if (result.IsFailure)

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "fmX1U0Xfn0XmsoRCaMSprGn64XQYAS4+tvckZCtEf5Y8tFZpU2ip2txw++tv55fUV+DwiV7ox4xSSue8HELGug==",
+  "dgSpecHash": "cg6BTsTPWnLEejFSHsu3sRM3rPTtuO5bn5MSIDZJE99psFHede3XTujBxoXTEiXHZorcqm0YAXX9Npi/VvJ+ag==",
   "success": true,
   "projectFilePath": "G:\\DotNetProjects\\TeamTasks\\TeamTasks.Micro.TasksAPI\\TeamTasks.Micro.TasksAPI.csproj",
   "expectedPackageFiles": [
@@ -104,6 +104,10 @@
     "C:\\Users\\ponom\\.nuget\\packages\\polly.core\\8.2.1\\polly.core.8.2.1.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\prometheus-net\\8.2.1\\prometheus-net.8.2.1.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\prometheus-net.aspnetcore\\8.2.1\\prometheus-net.aspnetcore.8.2.1.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\prometheus.client\\5.2.0\\prometheus.client.5.2.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\prometheus.client.abstractions\\5.2.0\\prometheus.client.abstractions.5.2.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\prometheus.client.aspnetcore\\5.0.0\\prometheus.client.aspnetcore.5.0.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\quartz\\3.8.0\\quartz.3.8.0.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\rabbitmq.client\\7.0.0-alpha.2\\rabbitmq.client.7.0.0-alpha.2.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
@@ -158,7 +162,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.WebApi.Core 5.3.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "message": "Пакет \"Microsoft.AspNet.WebApi.Core 5.3.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net8.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
       "libraryId": "Microsoft.AspNet.WebApi.Core",
       "targetGraphs": [
         "net8.0"
@@ -168,7 +172,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.WebApi.WebHost 5.3.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "message": "Пакет \"Microsoft.AspNet.WebApi.WebHost 5.3.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net8.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
       "libraryId": "Microsoft.AspNet.WebApi.WebHost",
       "targetGraphs": [
         "net8.0"

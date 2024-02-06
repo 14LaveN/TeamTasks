@@ -24,7 +24,5 @@ internal sealed class PublishIntegrationEventOnGroupEventCancelledDomainEventHan
     public async Task Handle(GroupEventCancelledDomainEvent notification, CancellationToken cancellationToken)
     {
         await _integrationEventPublisher.Publish(new GroupEventCancelledIntegrationEvent(notification));
-
-        await Task.CompletedTask;
     }
 }

@@ -1147,6 +1147,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "G:\\DotNetProjects\\TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj": {
+                "projectPath": "G:\\DotNetProjects\\TeamTasks\\TeamTasks.Application\\TeamTasks.Application.csproj"
+              },
               "G:\\DotNetProjects\\TeamTasks\\TeamTasks.Database.Identity\\TeamTasks.Database.Identity.csproj": {
                 "projectPath": "G:\\DotNetProjects\\TeamTasks\\TeamTasks.Database.Identity\\TeamTasks.Database.Identity.csproj"
               }
@@ -1163,6 +1166,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Prometheus.Client.AspNetCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "Quartz": {
               "target": "Package",
               "version": "[3.8.0, )"

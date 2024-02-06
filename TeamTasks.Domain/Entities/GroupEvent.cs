@@ -1,4 +1,5 @@
-﻿using TeamTasks.Domain.Core.Errors;
+﻿using MediatR;
+using TeamTasks.Domain.Core.Errors;
 using TeamTasks.Domain.Core.Primitives.Result;
 using TeamTasks.Domain.Enumerations;
 using TeamTasks.Domain.Events;
@@ -24,6 +25,13 @@ public sealed class GroupEvent : Event
     }
 
     /// <summary>
+    /// Navigation field.
+    /// </summary>
+    public ICollection<User> Attendees { get; set; }
+
+    public bool Processed { get; set; } = false;
+
+    /// <summary>
     /// Initializes a new instance of the <see cref="GroupEvent"/> class.
     /// </summary>
     /// <remarks>
@@ -32,7 +40,7 @@ public sealed class GroupEvent : Event
     private GroupEvent()
     {
     }
-
+    
     /// <summary>
     /// Creates a new group event based on the specified parameters.
     /// </summary>
@@ -50,6 +58,32 @@ public sealed class GroupEvent : Event
         return groupEvent;
     }
 
+    //TODO Create IDomainEventHandler where author and attendee will save group event and update for add attendees and work with them in bg tasks.
+    //TODO In publisher updating group event.
+    //TODO Create group event in publishers.
+    //TODO Create bg task where group event sends emails.
+    //TODO Thinking about Processed flag in group event and include him to group event entity.
+    ///TODO When use the CreateGroupEvent, use the <see cref="ISender"/> in service.
+    ///TODO When event cancelled send the notification author and attendees.
+    
+    /// <summary>
+    /// Add to group event attendee.
+    /// </summary>
+    /// <param name="groupEvent">The group event.</param>
+    /// <param name="attendee">The attendee</param>
+    /// <returns>The newly created group event.</returns>
+    public static async Task<Result> AddToGroupEventAttendee(GroupEvent groupEvent, User attendee)
+    {
+        if (!groupEvent.Cancelled)
+        {
+            groupEvent.AddDomainEvent(new AddToGroupEventAttendeeDomainEvent(groupEvent, attendee));
+
+            return await Result.Success();
+        }
+
+        return Result.Failure(DomainErrors.GroupEvent.IsCancelled);
+    }
+    
     /// <inheritdoc />
     public override bool ChangeName(Name name)
     {

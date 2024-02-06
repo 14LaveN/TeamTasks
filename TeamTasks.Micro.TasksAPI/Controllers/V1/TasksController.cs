@@ -96,4 +96,6 @@ public sealed class TasksController(
             .Bind(command => BaseRetryPolicy.Policy.Execute(async () =>
                 await Sender.Send(command)).Result.Data)
             .Match(Ok, BadRequest);
+    
+    //TODO Create the queries for CQRS.
 }

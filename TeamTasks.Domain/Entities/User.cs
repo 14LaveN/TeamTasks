@@ -72,6 +72,21 @@ public sealed class User : IdentityUser<Guid>, IAuditableEntity, ISoftDeletableE
     /// <summary>
     /// Navigation field.
     /// </summary>
+    public ICollection<GroupEvent> YourGroupEvents { get; set; }
+    
+    /// <summary>
+    /// Navigation field.
+    /// </summary>
+    public ICollection<GroupEvent> AttendeeGroupEvents { get; set; }
+    
+    /// <summary>
+    /// Navigation field.
+    /// </summary>
+    public ICollection<PersonalEvent> PersonalEvents { get; set; }
+
+    /// <summary>
+    /// Navigation field.
+    /// </summary>
     public ICollection<TaskEntity>? CompletedTasks { get; set; }
 
     /// <summary>
@@ -105,8 +120,8 @@ public sealed class User : IdentityUser<Guid>, IAuditableEntity, ISoftDeletableE
 
     /// <inheritdoc />
     public bool Deleted { get; }
-    
-    /// <inheritdoc/>
+
+    /// <inheritdoc />
     public string? RefreshToken { get; set; }
 
     private readonly List<IDomainEvent> _domainEvents = new();
@@ -146,7 +161,7 @@ public sealed class User : IdentityUser<Guid>, IAuditableEntity, ISoftDeletableE
         Guid companyId)
     {
         var user = new User(firstName, lastName, emailAddress, passwordHash, companyId);
-
+        
         user.AddDomainEvent(new UserCreatedDomainEvent(user));
 
         return user;

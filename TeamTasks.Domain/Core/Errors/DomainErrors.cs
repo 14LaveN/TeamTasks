@@ -74,6 +74,10 @@ public static class DomainErrors
         public static Error NotFound => new(
             "GroupEvent.NotFound",
             "The group event with the specified identifier was not found.");
+        
+        public static Error IsCancelled => new(
+            "GroupEvent.IsCancelled",
+            "The group event with the specified identifier was cancelled.");
 
         public static Error UserNotFound => new(
             "GroupEvent.UserNotFound",

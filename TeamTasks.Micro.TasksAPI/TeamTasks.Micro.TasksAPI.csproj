@@ -39,6 +39,7 @@
       <ProjectReference Include="..\TeamTasks.Database.Common\TeamTasks.Database.Common.csproj" />
       <ProjectReference Include="..\TeamTasks.Database.MetricsAndMessages\TeamTasks.Database.MetricsAndMessages.csproj" />
       <ProjectReference Include="..\TeamTasks.Database.Tasks\TeamTasks.Database.Tasks.csproj" />
+      <ProjectReference Include="..\TeamTasks.QuartZ\TeamTasks.QuartZ.csproj" />
       <ProjectReference Include="..\TeamTasks.RabbitMq\TeamTasks.RabbitMq.csproj" />
     </ItemGroup>
 

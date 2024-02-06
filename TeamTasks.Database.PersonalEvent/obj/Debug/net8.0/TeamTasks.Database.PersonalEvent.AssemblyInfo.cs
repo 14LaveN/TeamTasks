@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TeamTasks.Database.PersonalEvent")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4f30c3f1690baecbb2b37a17b185ade405f50b52")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+54835d5925d8230dd75103a81327a775a4bfdddd")]
 [assembly: System.Reflection.AssemblyProductAttribute("TeamTasks.Database.PersonalEvent")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TeamTasks.Database.PersonalEvent")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

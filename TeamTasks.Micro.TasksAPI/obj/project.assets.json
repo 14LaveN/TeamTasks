@@ -1767,6 +1767,71 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "Prometheus.Client/5.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Prometheus.Client.Abstractions": "5.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/Prometheus.Client.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/Prometheus.Client.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Prometheus.Client.Abstractions/5.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/Prometheus.Client.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/Prometheus.Client.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Prometheus.Client.AspNetCore/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Prometheus.Client": "[5.2.0, 6.0.0)"
+        },
+        "compile": {
+          "lib/net5.0/Prometheus.Client.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Prometheus.Client.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Quartz/3.8.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "2.1.1",
+          "System.Configuration.ConfigurationManager": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0/Quartz.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Quartz.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "RabbitMQ.Client/7.0.0-alpha.2": {
         "type": "package",
         "dependencies": {
@@ -2139,7 +2204,7 @@
           "System.Security.Cryptography.ProtectedData": "8.0.0"
         },
         "compile": {
-          "lib/net8.0/_._": {
+          "lib/net8.0/System.Configuration.ConfigurationManager.dll": {
             "related": ".xml"
           }
         },
@@ -2199,7 +2264,7 @@
       "System.Diagnostics.EventLog/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net8.0/_._": {
+          "lib/net8.0/System.Diagnostics.EventLog.dll": {
             "related": ".xml"
           }
         },
@@ -2713,6 +2778,22 @@
         },
         "runtime": {
           "bin/placeholder/TeamTasks.Email.dll": {}
+        }
+      },
+      "TeamTasks.QuartZ/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Prometheus.Client.AspNetCore": "5.0.0",
+          "Quartz": "3.8.0",
+          "TeamTasks.Application": "1.0.0",
+          "TeamTasks.Database.Identity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TeamTasks.QuartZ.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TeamTasks.QuartZ.dll": {}
         }
       },
       "TeamTasks.RabbitMq/1.0.0": {
@@ -4961,6 +5042,77 @@
         "prometheus-net.aspnetcore.nuspec"
       ]
     },
+    "Prometheus.Client/5.2.0": {
+      "sha512": "9Wa4qzz9WtKmXr2Yii5sOwAaKCzxwwfMg27wrHqrejw54icwRuWRSX68QhvUFwJnCKqpXc7SpIS3kzzmcfrB8w==",
+      "type": "package",
+      "path": "prometheus.client/5.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/netstandard2.0/Prometheus.Client.dll",
+        "lib/netstandard2.0/Prometheus.Client.xml",
+        "lib/netstandard2.1/Prometheus.Client.dll",
+        "lib/netstandard2.1/Prometheus.Client.xml",
+        "prometheus.client.5.2.0.nupkg.sha512",
+        "prometheus.client.nuspec"
+      ]
+    },
+    "Prometheus.Client.Abstractions/5.2.0": {
+      "sha512": "ROwoYLSTmodSTQLQWrqVLNh4ZZyXAA+0wPGKM+1dhCGUPJQm5qjrKMhMVL8Fy6waEU1CFtf+0nLeIsvdDCUFAQ==",
+      "type": "package",
+      "path": "prometheus.client.abstractions/5.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/netstandard2.0/Prometheus.Client.Abstractions.dll",
+        "lib/netstandard2.0/Prometheus.Client.Abstractions.xml",
+        "lib/netstandard2.1/Prometheus.Client.Abstractions.dll",
+        "lib/netstandard2.1/Prometheus.Client.Abstractions.xml",
+        "prometheus.client.abstractions.5.2.0.nupkg.sha512",
+        "prometheus.client.abstractions.nuspec"
+      ]
+    },
+    "Prometheus.Client.AspNetCore/5.0.0": {
+      "sha512": "MSJqKWEUq4gd9KVgtIEs7JnYUSLWst+4d7zTYCpshbN3JXFLxwYxignWGlEoID9gAdRmU9qKVkPePtcDXEaKug==",
+      "type": "package",
+      "path": "prometheus.client.aspnetcore/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net5.0/Prometheus.Client.AspNetCore.dll",
+        "lib/net5.0/Prometheus.Client.AspNetCore.xml",
+        "lib/netcoreapp3.1/Prometheus.Client.AspNetCore.dll",
+        "lib/netcoreapp3.1/Prometheus.Client.AspNetCore.xml",
+        "prometheus.client.aspnetcore.5.0.0.nupkg.sha512",
+        "prometheus.client.aspnetcore.nuspec"
+      ]
+    },
+    "Quartz/3.8.0": {
+      "sha512": "XYg+O+yw24kNLqp1YyEaZCzpQyVhcLQ5vep61RDKPZFjRNMBfBxcZiHNRFMNuN0XQIQ6zTGTHdZl9h7CuEVvXA==",
+      "type": "package",
+      "path": "quartz/3.8.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net462/Quartz.dll",
+        "lib/net462/Quartz.xml",
+        "lib/net472/Quartz.dll",
+        "lib/net472/Quartz.xml",
+        "lib/net6.0/Quartz.dll",
+        "lib/net6.0/Quartz.xml",
+        "lib/netstandard2.0/Quartz.dll",
+        "lib/netstandard2.0/Quartz.xml",
+        "quartz-logo-small.png",
+        "quartz.3.8.0.nupkg.sha512",
+        "quartz.nuspec"
+      ]
+    },
     "RabbitMQ.Client/7.0.0-alpha.2": {
       "sha512": "u+WMgy24KHun56/nctiq8bIy3PwT24JmQ+ON1LAg3Qx06mYvhlhiAItE0kkDAv1cEKt/a44mTwC6VD6WXZL4wg==",
       "type": "package",
@@ -6402,6 +6554,11 @@
       "path": "../TeamTasks.Email/TeamTasks.Email.csproj",
       "msbuildProject": "../TeamTasks.Email/TeamTasks.Email.csproj"
     },
+    "TeamTasks.QuartZ/1.0.0": {
+      "type": "project",
+      "path": "../TeamTasks.QuartZ/TeamTasks.QuartZ.csproj",
+      "msbuildProject": "../TeamTasks.QuartZ/TeamTasks.QuartZ.csproj"
+    },
     "TeamTasks.RabbitMq/1.0.0": {
       "type": "project",
       "path": "../TeamTasks.RabbitMq/TeamTasks.RabbitMq.csproj",
@@ -6423,6 +6580,7 @@
       "TeamTasks.Database.Common >= 1.0.0",
       "TeamTasks.Database.MetricsAndMessages >= 1.0.0",
       "TeamTasks.Database.Tasks >= 1.0.0",
+      "TeamTasks.QuartZ >= 1.0.0",
       "TeamTasks.RabbitMq >= 1.0.0"
     ]
   },
@@ -6469,6 +6627,9 @@
             },
             "G:\\DotNetProjects\\TeamTasks\\TeamTasks.Database.Tasks\\TeamTasks.Database.Tasks.csproj": {
               "projectPath": "G:\\DotNetProjects\\TeamTasks\\TeamTasks.Database.Tasks\\TeamTasks.Database.Tasks.csproj"
+            },
+            "G:\\DotNetProjects\\TeamTasks\\TeamTasks.QuartZ\\TeamTasks.QuartZ.csproj": {
+              "projectPath": "G:\\DotNetProjects\\TeamTasks\\TeamTasks.QuartZ\\TeamTasks.QuartZ.csproj"
             },
             "G:\\DotNetProjects\\TeamTasks\\TeamTasks.RabbitMq\\TeamTasks.RabbitMq.csproj": {
               "projectPath": "G:\\DotNetProjects\\TeamTasks\\TeamTasks.RabbitMq\\TeamTasks.RabbitMq.csproj"
@@ -6551,7 +6712,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.WebApi.Core 5.3.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "message": "Пакет \"Microsoft.AspNet.WebApi.Core 5.3.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net8.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
       "libraryId": "Microsoft.AspNet.WebApi.Core",
       "targetGraphs": [
         "net8.0"
@@ -6561,7 +6722,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.WebApi.WebHost 5.3.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "message": "Пакет \"Microsoft.AspNet.WebApi.WebHost 5.3.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net8.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
       "libraryId": "Microsoft.AspNet.WebApi.WebHost",
       "targetGraphs": [
         "net8.0"
