@@ -29,6 +29,10 @@ internal sealed class CompanyConfiguration : IEntityTypeConfiguration<Domain.Ent
             .WithOne(x => x.Company)
             .HasForeignKey(x=>x.CompanyId)
             .OnDelete(DeleteBehavior.Restrict);
+        
+        builder.HasOne(x => x.Author)
+            .WithOne(x => x.Company)
+            .OnDelete(DeleteBehavior.Restrict);
 
         builder.HasMany(x => x.Users)
             .WithOne(x => x.Company)

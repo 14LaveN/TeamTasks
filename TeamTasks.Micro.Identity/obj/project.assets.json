@@ -3174,7 +3174,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Prometheus.Client.AspNetCore": "5.0.0",
           "Quartz": "3.8.0",
+          "TeamTasks.Application": "1.0.0",
           "TeamTasks.Database.Identity": "1.0.0"
         },
         "compile": {

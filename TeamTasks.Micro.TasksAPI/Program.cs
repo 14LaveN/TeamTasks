@@ -1,5 +1,6 @@
 using TeamTasks.Micro.TasksAPI.Common.DependencyInjection;
 using TeamTasks.Micro.TasksAPI.Configurations;
+using TeamTasks.QuartZ.Schedulers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +19,8 @@ builder.Services.AddMediatrExtension();
 builder.Services.AddValidators();
 
 var app = builder.Build();
+
+SaveMetricsScheduler.Start();
 
 app.MapGet("/", () => "Hello World!");
 

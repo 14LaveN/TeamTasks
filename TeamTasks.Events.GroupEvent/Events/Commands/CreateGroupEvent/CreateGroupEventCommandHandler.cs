@@ -76,7 +76,7 @@ internal sealed class CreateGroupEventCommandHandler : ICommandHandler<CreateGro
         }
 
         var groupEvent = Domain.Entities.GroupEvent.Create(maybeUser.Value, nameResult.Value, maybeCategory.Value, request.DateTimeUtc);
-
+        
         await _groupEventRepository.Insert(groupEvent);
 
         await _unitOfWork.SaveChangesAsync(cancellationToken);

@@ -43,7 +43,7 @@ public sealed class Maybe<T> : IEquatable<Maybe<T>>
     /// </summary>
     /// <param name="value">The value.</param>
     /// <returns>The new <see cref="Maybe{T}"/> instance.</returns>
-    public static Maybe<T> From(T value) => new Maybe<T>(value);
+    public static Maybe<T> From(T value) => new(value);
 
     public static implicit operator Maybe<T>(T value) => From(value);
 

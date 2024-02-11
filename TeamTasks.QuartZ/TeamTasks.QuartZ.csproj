@@ -7,10 +7,12 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\TeamTasks.Application\TeamTasks.Application.csproj" />
       <ProjectReference Include="..\TeamTasks.Database.Identity\TeamTasks.Database.Identity.csproj" />
     </ItemGroup>
 
     <ItemGroup>
+      <PackageReference Include="Prometheus.Client.AspNetCore" Version="5.0.0" />
       <PackageReference Include="Quartz" Version="3.8.0" />
     </ItemGroup>
 

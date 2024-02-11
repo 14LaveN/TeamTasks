@@ -13,6 +13,7 @@ using TeamTasks.RabbitMq;
 using Prometheus;
 using Prometheus.Client.AspNetCore;
 using Prometheus.Client.HttpRequestDurations;
+using TeamTasks.QuartZ.Schedulers;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -55,6 +55,11 @@ public abstract class Event : AggregateRoot, IAuditableEntity, ISoftDeletableEnt
     public Guid UserId { get; private set; }
 
     /// <summary>
+    /// Gets the author.
+    /// </summary>
+    public User? Author { get; set; }
+
+    /// <summary>
     /// Gets the event name.
     /// </summary>
     public Name Name { get; private set; }

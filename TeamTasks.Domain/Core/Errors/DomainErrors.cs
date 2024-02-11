@@ -17,6 +17,17 @@ public static class DomainErrors
         
         public static Error AlreadyDone => new("Task.AlreadyDone", "The task with the specified identifier already done.");
     }
+    
+    /// <summary>
+    /// Contains the company errors.
+    /// </summary>
+    public static class Company
+    {
+        public static Error NotFound =>
+            new("Company.NotFound", "The company with the specified identifier was not found.");
+        
+        public static Error AlreadyDone => new("Task.AlreadyDone", "The task with the specified identifier already done.");
+    }
 
     /// <summary>
     /// Contains the user errors.
@@ -71,9 +82,16 @@ public static class DomainErrors
     /// </summary>
     public static class GroupEvent
     {
+        public static Error AlreadyProcessed =>
+            new("GroupEvent.AlreadyProcessed", "The event has already been processed.");
+        
         public static Error NotFound => new(
             "GroupEvent.NotFound",
             "The group event with the specified identifier was not found.");
+        
+        public static Error IsCancelled => new(
+            "GroupEvent.IsCancelled",
+            "The group event with the specified identifier was cancelled.");
 
         public static Error UserNotFound => new(
             "GroupEvent.UserNotFound",
@@ -113,7 +131,8 @@ public static class DomainErrors
             "GroupEvent.InThePast",
             "The event date and time cannot be in the past.");
 
-        public static Error AlreadyProcessed => new("PersonalEvent.AlreadyProcessed", "The event has already been processed.");
+        public static Error AlreadyProcessed =>
+            new("PersonalEvent.AlreadyProcessed", "The event has already been processed.");
     }
 
     /// <summary>

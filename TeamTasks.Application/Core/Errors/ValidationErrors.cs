@@ -18,40 +18,6 @@ public static class ValidationErrors
     }
 
     /// <summary>
-    /// Contains the reject friendship request errors.
-    /// </summary>
-    internal static class RejectFriendshipRequest
-    {
-        internal static Error FriendshipRequestIdIsRequired => new Error(
-            "RejectFriendshipRequest.FriendshipRequestIdIsRequired",
-            "The invitation identifier is required.");
-    }
-
-    /// <summary>
-    /// Contains the accept friendship request errors.
-    /// </summary>
-    internal static class AcceptFriendshipRequest
-    {
-        internal static Error FriendshipRequestIdIsRequired => new Error(
-            "AcceptFriendshipRequest.FriendshipRequestIdIsRequired",
-            "The invitation identifier is required.");
-    }
-
-    /// <summary>
-    /// Contains the send remove friendship errors.
-    /// </summary>
-    internal static class RemoveFriendship
-    {
-        internal static Error UserIdIsRequired => new Error(
-            "RemoveFriendship.UserIdIsRequired",
-            "The user identifier is required.");
-
-        internal static Error FriendIdIsRequired => new Error(
-            "RemoveFriendship.FriendIdIsRequired",
-            "The friend identifier is required.");
-    }
-
-    /// <summary>
     /// Contains the create group event errors.
     /// </summary>
     public static class CreateGroupEvent

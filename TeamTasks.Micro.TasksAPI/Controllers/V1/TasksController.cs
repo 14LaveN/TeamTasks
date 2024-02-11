@@ -5,12 +5,15 @@ using TeamTasks.Application.ApiHelpers.Infrastructure;
 using TeamTasks.Application.ApiHelpers.Policy;
 using TeamTasks.Database.Identity.Data.Interfaces;
 using TeamTasks.Domain.Core.Errors;
+using TeamTasks.Domain.Core.Primitives.Maybe;
 using TeamTasks.Domain.Core.Primitives.Result;
 using TeamTasks.Domain.ValueObjects;
 using TeamTasks.Micro.TasksAPI.Commands.CreateTask;
 using TeamTasks.Micro.TasksAPI.Commands.DoneTask;
 using TeamTasks.Micro.TasksAPI.Commands.UpdateTask;
 using TeamTasks.Micro.TasksAPI.Contracts.Task.Create;
+using TeamTasks.Micro.TasksAPI.Contracts.Task.Get;
+using TeamTasks.Micro.TasksAPI.Queries.GetAuthorTasksByIsDone;
 
 namespace TeamTasks.Micro.TasksAPI.Controllers.V1;
 
@@ -96,4 +99,24 @@ public sealed class TasksController(
             .Bind(command => BaseRetryPolicy.Policy.Execute(async () =>
                 await Sender.Send(command)).Result.Data)
             .Match(Ok, BadRequest);
+    
+    /// <summary>
+    /// Get Author Tasks By tasks IsDone.
+    /// </summary>
+    /// <returns>Base information about get author tasks  method.</returns>
+    /// <remarks>
+    /// Example request:
+    /// </remarks>
+    /// <response code="200">OK.</response>
+    /// <response code="400">BadRequest.</response>
+    /// <response code="500">Internal server error</response>
+    [HttpGet(ApiRoutes.Task.GetAuthorTasksByIsDone)]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ApiErrorResponse), StatusCodes.Status400BadRequest)]
+    public async Task<IActionResult> GetAuthorTasksByIsDone() =>
+        await Maybe<GetAuthorTasksByIsDoneQuery>
+            .From(new GetAuthorTasksByIsDoneQuery(UserId))
+            .Bind<GetAuthorTasksByIsDoneQuery, Maybe<IEnumerable<GetTaskResponse>>>(async query => await BaseRetryPolicy.Policy.Execute(async () =>
+                await Sender.Send(query)))
+            .Match(Ok, NotFound);
 }

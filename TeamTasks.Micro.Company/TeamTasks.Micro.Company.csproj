@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Content Include="..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\TeamTasks.Application\TeamTasks.Application.csproj" />
+      <ProjectReference Include="..\TeamTasks.Database.Company\TeamTasks.Database.Company.csproj" />
+      <ProjectReference Include="..\TeamTasks.Events.GroupEvent\TeamTasks.Events.GroupEvent.csproj" />
+    </ItemGroup>
+
+</Project>

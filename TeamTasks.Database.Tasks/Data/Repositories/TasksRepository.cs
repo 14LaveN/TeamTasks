@@ -27,7 +27,6 @@ internal sealed class TasksRepository : GenericRepository<TaskEntity>, ITasksRep
     public async Task<Result<TaskEntity>> UpdateTask(TaskEntity task)
     {
         const string sql = """
-                           
                                            UPDATE dbo.tasks
                                            SET ModifiedOnUtc= @ModifiedOnUtc,
                                                Priority = @Priority,
@@ -50,7 +49,7 @@ internal sealed class TasksRepository : GenericRepository<TaskEntity>, ITasksRep
     }
 
     /// <inheritdoc />
-    public async Task<IEnumerable<Maybe<TasksDto>>> GetAuthorTasksByIsDone(Guid authorId)
+    public async Task<IEnumerable<TasksDto>> GetAuthorTasksByIsDone(Guid authorId)
     {
         //TODO Write the database path.
         await using var connection = new SqlConnection("");
@@ -61,14 +60,15 @@ internal sealed class TasksRepository : GenericRepository<TaskEntity>, ITasksRep
                         SELECT t.Description, t.IsDone, t.Title,
                                t.CreatedAt, t.Priority, u.UserName 
                         FROM dbo.tasks AS t
-                        INNER JOIN dbp.AspNetUsers AS u 
+                        INNER JOIN dbo.AspNetUsers AS u 
                         ON @AuthorId = u.Id
+                        WHERE t.IsDone = false
                         GROUP BY t.Description, t.IsDone, t.Title,
                                  t.CreatedAt, t.Priority, u.UserName 
                         
                     """;
 
-        var tasksDto = await connection.QueryAsync<Maybe<TasksDto>>(query, new { AuthorId = authorId });
+        var tasksDto = await connection.QueryAsync<TasksDto>(query, new { AuthorId = authorId });
         
         return tasksDto;
     }
@@ -87,6 +87,7 @@ internal sealed class TasksRepository : GenericRepository<TaskEntity>, ITasksRep
                          FROM dbo.tasks AS t
                          INNER JOIN dbo.companies AS c
                          ON @ComapnyId = c.Id
+                         WHERE t.IsDone = false
                          GROUP BY t.Description, t.IsDone, t.Title,
                                   t.CreatedAt, t.Priority, c.UserName
                          

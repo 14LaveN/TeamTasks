@@ -41,6 +41,8 @@ public sealed class DoneTaskCommandHandler
         _userRepository = userRepository;
     }
     
+    //TODO Change the tasks repository hard queries to IEnumerable<TasksDTO>.
+    
     /// <inheritdoc />
     public async Task<IBaseResponse<Result>> Handle(DoneTaskCommand request, CancellationToken cancellationToken)
     {
