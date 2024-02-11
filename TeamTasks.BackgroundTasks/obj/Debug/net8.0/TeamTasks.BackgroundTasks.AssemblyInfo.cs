@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TeamTasks.BackgroundTasks")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+54835d5925d8230dd75103a81327a775a4bfdddd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72bcfc4c36130ff2edf377d35ef8c7aa3385f5e8")]
 [assembly: System.Reflection.AssemblyProductAttribute("TeamTasks.BackgroundTasks")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TeamTasks.BackgroundTasks")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

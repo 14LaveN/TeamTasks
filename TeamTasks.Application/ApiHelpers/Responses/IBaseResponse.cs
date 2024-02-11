@@ -9,5 +9,5 @@ public interface IBaseResponse<T>
 
     public string Description { get; set; }
     
-    public Task<Result> Data { get; set; }
+    public Task<T> Data { get; set; }
 }

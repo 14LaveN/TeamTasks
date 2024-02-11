@@ -13,4 +13,10 @@
       </Content>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\TeamTasks.Application\TeamTasks.Application.csproj" />
+      <ProjectReference Include="..\TeamTasks.Database.Company\TeamTasks.Database.Company.csproj" />
+      <ProjectReference Include="..\TeamTasks.Events.GroupEvent\TeamTasks.Events.GroupEvent.csproj" />
+    </ItemGroup>
+
 </Project>

@@ -41,7 +41,7 @@ public interface ITasksRepository
     /// </summary>
     /// <param name="authorId">The author identifier.</param>
     /// <returns>The maybe instance that may contain the enumerable task DTO with the specified task class.</returns>
-    Task<IEnumerable<Maybe<TasksDto>>> GetAuthorTasksByIsDone(Guid authorId);
+    Task<IEnumerable<TasksDto>> GetAuthorTasksByIsDone(Guid authorId);
     
     /// <summary>
     /// Gets the enumerable tasks with the specified company identifier.

@@ -42,6 +42,7 @@ public sealed class SaveMetricsJob
             dbSettings.Value.MetricsCollectionName);
     }
     
+    /// <inheritdoc/>
     public async Task Execute(IJobExecutionContext context)
     {
         try

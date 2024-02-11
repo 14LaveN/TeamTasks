@@ -1,6 +1,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Quartz;
 using Quartz.Impl;
+using TeamTasks.QuartZ.Jobs;
 
 namespace TeamTasks.QuartZ.Schedulers;
 
@@ -13,10 +14,10 @@ public sealed class AbstractScheduler<T>
             //scheduler.JobFactory = serviceProvider.GetService<QuartzJobFactory>();
         await scheduler.Start();
 
-        IJobDetail jobDetail = JobBuilder.Create<T>().Build();
+        IJobDetail jobDetail = JobBuilder.Create<UserDbTask>().Build();
         ITrigger trigger = TriggerBuilder
             .Create()
-            .WithIdentity($"{nameof(T)}Trigger", "default")
+            .WithIdentity($"{nameof(UserDbTask)}Trigger", "default")
             .StartNow()
             .WithSimpleSchedule(x => x
                 .WithIntervalInSeconds(160)

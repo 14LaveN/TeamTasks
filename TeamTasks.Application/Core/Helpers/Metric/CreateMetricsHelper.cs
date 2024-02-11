@@ -17,27 +17,15 @@ public sealed class CreateMetricsHelper
 {
     private static readonly Counter RequestCounter =
         Metrics.CreateCounter("TeamTasks_requests_total", "Total number of requests.");
-    private readonly IMongoCollection<MetricEntity> _metricsCollection;
+    
     private readonly IDistributedCache _distributedCache;
 
     /// <summary>
     /// Initialize a new instance of the <see cref="CreateMetricsHelper"/>
     /// </summary>
-    /// <param name="dbSettings">The mongo db settings.</param>
     /// <param name="distributedCache">The distributed cache.</param>
-    public CreateMetricsHelper(IOptions<MongoSettings> dbSettings,
-        IDistributedCache distributedCache)
-    {
+    public CreateMetricsHelper (IDistributedCache distributedCache) =>
         _distributedCache = distributedCache;
-        var mongoClient = new MongoClient(
-            dbSettings.Value.ConnectionString);
-
-        var mongoDatabase = mongoClient.GetDatabase(
-            dbSettings.Value.Database);
-
-        _metricsCollection = mongoDatabase.GetCollection<MetricEntity>(
-            dbSettings.Value.MetricsCollectionName);
-    }
 
     /// <summary>
     /// Create metrics method.

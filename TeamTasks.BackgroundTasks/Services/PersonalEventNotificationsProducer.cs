@@ -8,7 +8,6 @@ using TeamTasks.Domain.Enumerations;
 
 namespace TeamTasks.BackgroundTasks.Services;
 
-//TODO Create the group event notifications producer and work with personal events.
 //TODO Create Publishers in Personal and Group events.
 //TODO Create publishers where events saving and cancelled.
 //TODO Create publishers notification.

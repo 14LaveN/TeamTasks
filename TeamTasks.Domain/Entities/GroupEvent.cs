@@ -25,13 +25,6 @@ public sealed class GroupEvent : Event
     }
 
     /// <summary>
-    /// Navigation field.
-    /// </summary>
-    public ICollection<User> Attendees { get; set; }
-
-    public bool Processed { get; set; } = false;
-
-    /// <summary>
     /// Initializes a new instance of the <see cref="GroupEvent"/> class.
     /// </summary>
     /// <remarks>
@@ -39,6 +32,32 @@ public sealed class GroupEvent : Event
     /// </remarks>
     private GroupEvent()
     {
+    }
+    
+    /// <summary>
+    /// Navigation field.
+    /// </summary>
+    public ICollection<User> Attendees { get; set; }
+
+    /// <summary>
+    /// Gets or sets processed.
+    /// </summary>
+    public bool Processed { get; set; }
+    
+    /// <summary>
+    /// Marks the event as processed and returns the respective result.
+    /// </summary>
+    /// <returns>The success result if the event was not previously marked as processed, otherwise a failure result.</returns>
+    public Result MarkAsProcessed()
+    {
+        if (Processed)
+        {
+            return Result.Failure(DomainErrors.GroupEvent.AlreadyProcessed);
+        }
+
+        Processed = true;
+
+        return Result.Success().GetAwaiter().GetResult();
     }
     
     /// <summary>
@@ -63,7 +82,6 @@ public sealed class GroupEvent : Event
     //TODO Create group event in publishers.
     //TODO Create bg task where group event sends emails.
     //TODO Thinking about Processed flag in group event and include him to group event entity.
-    ///TODO When use the CreateGroupEvent, use the <see cref="ISender"/> in service.
     ///TODO When event cancelled send the notification author and attendees.
     
     /// <summary>

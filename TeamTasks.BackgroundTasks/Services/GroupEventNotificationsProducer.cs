@@ -9,6 +9,8 @@ using TeamTasks.Domain.Enumerations;
 
 namespace TeamTasks.BackgroundTasks.Services;
 
+//TODO Create attendees.
+
 /// <summary>
 /// Represents the group event notifications producer.
 /// </summary>
@@ -41,32 +43,32 @@ internal sealed class GroupEventNotificationsProducer : IGroupEventNotifications
     /// <inheritdoc />
     public async Task ProduceAsync(int batchSize, CancellationToken cancellationToken = default)
     {
-        IReadOnlyCollection<PersonalEvent> unprocessedPersonalEvents = await _groupEventRepository.GetUnprocessedAsync(batchSize);
+        IReadOnlyCollection<GroupEvent> unprocessedGroupEvents = await _groupEventRepository.GetUnprocessedAsync(batchSize);
 
-        if (!unprocessedPersonalEvents.Any())
+        if (!unprocessedGroupEvents.Any())
         {
             return;
         }
 
         var notifications = new List<Notification>();
 
-        foreach (var personalEvent in unprocessedPersonalEvents)
+        foreach (var groupEvent in unprocessedGroupEvents)
         {
-            Result result = personalEvent.MarkAsProcessed();
+            Result result = groupEvent.MarkAsProcessed();
 
             if (result.IsFailure)
             {
                 continue;
             }
 
-            List<Notification> notificationsForPersonalEvent = NotificationType
+            List<Notification> notificationsForGroupEvent = NotificationType
                 .List
-                .Select(notificationType => notificationType.TryCreateNotification(personalEvent, personalEvent.UserId, _dateTime.UtcNow))
+                .Select(notificationType => notificationType.TryCreateNotification(groupEvent, groupEvent.UserId, _dateTime.UtcNow))
                 .Where(maybeNotification => maybeNotification.HasValue)
                 .Select(maybeNotification => maybeNotification.Value)
                 .ToList();
 
-            notifications.AddRange(notificationsForPersonalEvent);
+            notifications.AddRange(notificationsForGroupEvent);
         }
 
         await _notificationRepository.InsertRange(notifications);

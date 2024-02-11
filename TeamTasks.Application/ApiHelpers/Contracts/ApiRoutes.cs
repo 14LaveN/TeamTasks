@@ -15,6 +15,8 @@ public static class ApiRoutes
 
         public const string DoneTask = "donetask/{taskId:guid}";
 
+        public const string GetAuthorTasksByIsDone = "get-authror_tasks-by-is_done";
+        
         public const string GetTaskById = "get-task/{taskId:guid}";
         
         public const string Update = "update-task/{taskId:guid}";
